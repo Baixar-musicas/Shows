@@ -1,0 +1,4263 @@
+<!DOCTYPE html>
+<html lang=”pt-br”>
+
+<!-- Mirrored from www.packdemusicas.com.br/paineldosartistas.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Jun 2024 01:29:48 GMT -->
+<head>
+    
+<title>Painel dos Shows</title>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="normalize.css">
+<link rel="stylesheet" type="text/css" href="reset.css">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&amp;display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="Img-Shows/favicon.ico"/>  
+
+<style type="text/css">
+
+html {
+  scroll-behavior: smooth;
+} 
+
+body {
+	background: #020228;
+}
+
+.desktop {
+  display: block;  
+}
+
+.mobile {
+  display: none;
+}
+
+
+#over03 {
+  position:fixed;
+  top:0;
+  left:0;
+  background: linear-gradient(90deg, #151538 21px, transparent 1%) center, linear-gradient(#151538 21px, transparent 1%) center, #fff;
+    background-size: 22px 22px;
+  width:100%;
+  height:100%;
+  z-index:999999;
+}
+
+.inp03 {
+  width:550px;
+  margin:0px auto;
+    border-radius: 50px;
+    border: 2px solid #4b0082;
+    margin-top: 80px;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.4);
+    padding: 45px 0;
+    padding-bottom: 60px;
+}
+
+.imglogin {
+  width: 200px;
+  height: 80px;
+  margin: 0 auto;
+  background-image: url(Img-Shows/logotipo.png);
+  background-size: 200px 80px;
+  margin-bottom: 15px;
+}
+
+.con03 {
+  width:560px;
+  margin:30px auto;
+}
+    
+.label03 {
+  display:block;
+  padding:15px 15px 15px 0;
+  color: #fff;
+  font-size: 24px;
+  font-family: 'arial', sans-serif;
+    letter-spacing: 0px;
+    font-weight: 900;
+    text-transform: uppercase;
+}    
+
+#senha03 {
+    width: 60%;
+    margin: 0 auto;
+    border: 2px solid #7700fa;
+    border-radius: 50px;
+    background: none;
+    color: #fff;
+    padding: 10px 0;
+    padding-left: 20px;
+    padding-right: 0px;
+    font-size: 30px;
+    transition: all .5s linear;
+}
+
+#senha03:hover, #senha03:focus, #concluir03:focus{
+  outline: 0;
+  transition: all .5s linear;
+  box-shadow: inset 0px 0px 10px #777;
+}
+
+.textointerno::-webkit-input-placeholder { /* WebKit browsers */
+    color: #999;
+    font-size: 19px;
+    font-family: 'arial', sans-serif;
+  letter-spacing: .5px;
+}
+
+#concluir03 {
+  width:360px;
+  margin: 0 auto;
+  
+  background: #7700fa;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+  animation: gradient 3s ease infinite;
+  font-family: 'arial', sans-serif;
+  letter-spacing: .5px;
+
+  border: none;
+  border-radius: 50px;
+  font-size:20px;
+  font-weight:700;
+  padding:20px 0;
+  cursor:pointer;
+}
+
+#concluir03:hover {
+  width:360px;
+  margin: 0 auto;
+  background: #ffbc00;
+  color: #000;
+  font-family: 'arial', sans-serif;
+  letter-spacing: .5px;
+  border-radius: 50px;
+  padding:20px 0;
+  cursor:pointer;
+}
+
+.avisosenha03 {
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: .3px;
+    border: 2px solid #4b0082;
+    background-color:rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-family: 'arial', sans-serif;
+}
+
+
+
+
+.sectopo {
+	width: 100%;
+	padding: 35px 0;
+	background: #000;
+}
+
+.orglogintopo {
+	width: 1200px;
+	margin: 0 auto;
+	color: #fff;
+	display: flex;
+	align-items: center;
+  justify-content: center; 
+}
+
+.esqlogintopo {
+	width: 450px;
+	margin: 0 auto;
+	text-align: left;
+	flex: 1 1 450px;
+}
+
+.dirlogintopo {
+	width: 300px;
+	margin: 0 auto;
+	text-align: right;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+	flex: 1 1 300px;
+}
+
+.cont01 {
+	width: 200px;
+	margin-left: 200px;
+	font-size: 17px;
+	line-height: 19px;
+	font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	text-align: right;
+	padding-right: 15px;
+	float: right;
+}
+
+.cont02 {
+	width: 35px;
+	float: right;
+}
+
+.green{
+  background: #ffbc00;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1px 1px #ccc;
+}
+
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(128, 128, 128, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(128, 128, 128, 0);
+  }
+}
+
+	
+.topo {
+	width: 100%;
+	height: 600px;
+	background: #000;
+}
+
+.orgtopo {
+	width: 1420px;
+	margin: 0 auto;
+	padding-bottom: 0;
+	background: #000;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.div01 {
+	width: 360px;
+	height: 600px;
+	background-image: url(Img-Shows/12.png);
+	background-size: 360px 600px;
+	flex: 1 1 360px;
+	animation: mymove01 11s infinite;
+}
+
+@keyframes mymove01 {
+	
+	0% {background-color: #000; background-image: url(Img-Shows/01.png%200.html); background-size: 360px 600px;}
+  10% {background-color: #000; background-image: url(Img-Shows/01.png); background-size: 360px 600px;}
+  50% {background-color: #000; background-image: url(Img-Shows/01.png); background-size: 360px 600px;}
+
+  50% {background-color: #000; background-image: url(Img-Shows/04.png%200.html); background-size: 360px 600px;}
+  60% {background-color: #000; background-image: url(Img-Shows/04.png); background-size: 360px 600px;}
+  90% {background-color: #000; background-image: url(Img-Shows/04.png); background-size: 360px 600px;}
+
+  100% {background-color: #000; background-image: url(Img-Shows/12.png%200.html); background-size: 360px 600px;}
+}
+
+
+.div02 {
+	width: 360px;
+	height: 600px;
+	flex: 1 1 360px;
+	background-image: url(Img-Shows/11.png);
+	background-size: 360px 600px;
+	animation: mymove02 12s infinite;
+}
+
+@keyframes mymove02 {
+  
+  0% {background-color: #000; background-image: url(Img-Shows/02.png%200.html); background-size: 360px 600px;}
+  10% {background-color: #000; background-image: url(Img-Shows/02.png); background-size: 360px 600px;}
+  50% {background-color: #000; background-image: url(Img-Shows/02.png); background-size: 360px 600px;}
+
+  50% {background-color: #000; background-image: url(Img-Shows/05.png%200.html); background-size: 360px 600px;}
+  60% {background-color: #000; background-image: url(Img-Shows/05.png); background-size: 360px 600px;}
+  90% {background-color: #000; background-image: url(Img-Shows/05.png); background-size: 360px 600px;}
+
+  100% {background-color: #000; background-image: url(Img-Shows/11.png%200.html); background-size: 360px 600px;}
+}
+
+.div03 {
+	width: 360px;
+	height: 600px;
+	flex: 1 1 360px;
+	background-image: url(Img-Shows/07.png);
+	background-size: 360px 600px;
+	animation: mymove03 13s infinite;
+}
+
+@keyframes mymove03 {
+  
+  0% {background-color: #000; background-image: url(Img-Shows/10.png%200.html); background-size: 360px 600px;}
+  10% {background-color: #000; background-image: url(Img-Shows/10.png); background-size: 360px 600px;}
+  50% {background-color: #000; background-image: url(Img-Shows/10.png); background-size: 360px 600px;}
+
+  50% {background-color: #000; background-image: url(Img-Shows/08.png%200.html); background-size: 360px 600px;}
+  60% {background-color: #000; background-image: url(Img-Shows/08.png); background-size: 360px 600px;}
+  90% {background-color: #000; background-image: url(Img-Shows/08.png); background-size: 360px 600px;}
+
+  100% {background-color: #000; background-image: url(Img-Shows/07.png%200.html); background-size: 360px 600px;}
+}
+
+.div04 {
+	width: 360px;
+	height: 600px;
+	flex: 1 1 360px;
+	background-image: url(Img-Shows/03.png);
+	background-size: 360px 600px;
+	animation: mymove04 14s infinite;
+}
+
+@keyframes mymove04 {
+  
+  0% {background-color: #000; background-image: url(Img-Shows/09.png%200.html); background-size: 360px 600px;}
+  10% {background-color: #000; background-image: url(Img-Shows/09.png); background-size: 360px 600px;}
+  50% {background-color: #000; background-image: url(Img-Shows/09.png); background-size: 360px 600px;}
+
+  50% {background-color: #000; background-image: url(Img-Shows/06.png%200.html); background-size: 360px 600px;}
+  60% {background-color: #000; background-image: url(Img-Shows/06.png); background-size: 360px 600px;}
+  90% {background-color: #000; background-image: url(Img-Shows/06.png); background-size: 360px 600px;}
+
+  100% {background-color: #000; background-image: url(Img-Shows/03.png%200.html); background-size: 360px 600px;}
+}
+
+
+
+.textoinformativo {
+  width: 100%;
+  height: 90px;
+  margin: 0 auto;
+  margin-top: 0px;
+ background: linear-gradient(to top, rgba(26,61,61,0.3), rgba(0,0,0,0.9));
+  color: #fff;
+  border-radius: 0;
+  padding: 25px 0;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conttextoinformativo {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.paragrafotextoinformativo {
+  margin: 3px auto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bgfundo {
+  width: 100%;
+  padding: 60px 0;
+  padding-bottom: 30px;
+  background-image: radial-gradient(circle, #1f1f41, #020228, #1f1f41);
+}
+
+
+.menudiscos {
+	width: 1220px;
+	margin: 0 auto;
+	margin-top: 120px;
+	text-align: center;
+  display: flex;
+  align-items: flex-start;
+}
+
+.esqdiscos {
+  width: 250px;
+  margin-top: 0px;
+  flex: 1 1 250px;
+}
+
+/* Style the buttons inside the tab */
+.esqdiscos button {
+  width: 250px;
+  height: 65px;
+  margin-bottom: 7px;
+  margin-left: 0;
+  color: #fff;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  border: 2px solid #151538;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  background-color:rgba(84, 21, 135, 0.3);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: .4s;
+}
+
+.esqdiscos button:hover {
+  width: 240px;
+  height: 65px;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 500;
+  margin-left: 5px;
+  background: #07072d;
+  border: 2px solid #c600ff;
+  cursor: pointer;
+  background: linear-gradient(100deg,#000,#151538);
+  animation: gradient-animation 4s ease infinite;
+  cursor: pointer;
+}
+
+
+/* Create an active/current "tab button" class */
+.esqdiscos button.active {
+  margin-left: 5px;
+  margin-bottom: 10px;
+  color: #181638;
+  border: 2px solid #ffde00;
+  background: linear-gradient(100deg,#ffbc00,#ffde00);
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+
+.dirdiscos {
+  width: 950px;
+  margin-top: -110px;
+  margin-bottom: 30px;
+  flex: 1 1 950px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  width: 940px;
+  float: right;
+  background: none;
+  margin-top: 0;
+  border-radius: 12px;
+  margin-left: 0px;
+  animation: opacidade .8s;
+}
+
+.tabcontent h2 {
+  width: 920px;
+  margin: 0 auto;
+  padding: 15px 0;
+  background: linear-gradient(
+   to right, 
+   rgba(0,0,0,0) 0%,
+   rgba(0,0,0,0.4) 60%,
+   rgba(0,0,0,0) 100%
+);
+}
+
+@keyframes opacidade {
+  from {margin-top: -7px;}
+  to {margin-top: 0px;}
+}
+
+
+.conteudodiscos {
+  width: 930px;
+  margin: 0 auto;
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.carddiscos {
+  width: 300px;
+  margin-top: 30px;
+  margin-bottom: 45px;
+  text-align: center;
+  color: #fff;
+  flex: 1 1 300px;
+}
+
+.carddiscos img {
+  transform: scale(1);
+  border: 2px solid #030329;
+  transition: .6s;
+}
+
+.carddiscos img:hover {
+  border: 2px solid #c600ff;
+  border-radius: 10px;
+  transform: scale(1.02);
+}
+
+.carddiscos h3 {
+  width: 300px;
+  margin: 15px auto;
+  font-size: 16px;
+  line-height: 20px;
+  color: #eee;
+  font-weight: 700;
+  letter-spacing: .3px;
+  font-family: 'arial', sans-serif;
+  text-transform: uppercase; 
+}
+
+.carddiscos button {
+  width: 280px;
+  padding: 20px 0;
+  border: 2px solid #151538;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  background: linear-gradient(140deg,#9625b5,#9625b5,#290a68);
+  background-size: 180% 180%;
+  animation: gradient-animation 3s ease infinite;
+  transition: .4s;
+}
+
+.carddiscos button:hover {
+  background: #07072d;
+  border: 2px solid #c600ff;
+  cursor: pointer;
+  background: linear-gradient(100deg,#000,#151538);
+  animation: gradient-animation 4s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.orgfooter {
+  width: 1100px;
+  margin: 45px auto;
+  margin-top: 60px;
+  background-color: #181638;
+  background-image: linear-gradient(19deg, #181638 30%, #040048 100%);
+  color: #fff;
+  padding: 45px 50px;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 190px;
+  height: 75px;
+  margin: 0 auto;
+  flex: 1 1 190px;
+  display: flex;
+  align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+  width: 190px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.esqfooter {
+  width: 150px;
+  margin: 0 auto;
+  flex: 1 1 150px;
+  display: flex;
+  align-items: center;
+    justify-content: center;
+}
+
+.esqfooter ul {
+  width: 180px;
+  text-align: left;
+  list-style-type: none;
+}
+
+.esqfooter ul li {
+  padding: 2px 0;
+  font-size: 21px;
+}
+
+.esqfooter ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #ccc;
+  text-transform: uppercase;
+  font-family: 'roboto', sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  transition: .4s;
+}
+
+.esqfooter ul li a:hover {
+  opacity: .7;
+  letter-spacing: 0.2px;
+  color: #fff;
+}
+
+.esqfooter ul li a:visited {
+  color: #fff;
+}
+
+.centrofooter {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  flex: 1 1 200px;
+}
+
+.centrofooter h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  padding-bottom: 3px;
+}
+
+.centrofooter p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  margin-top: 6px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.dirfooter {
+  width: 250px;
+  margin: 0 auto;
+  flex: 1 1 250px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+    justify-content: center;
+}
+
+.dirfooter img {
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+  border-radius: 15px;
+  transform: scale(1.0);
+  transition: .4s;
+}
+
+.dirfooter img:hover {
+  transform: scale(1.1);
+}
+
+
+.tituloanimado {
+  background: 50% 100% / 50% 50% no-repeat
+  radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 48px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  letter-spacing: -1px;
+  animation: reveal 2000ms ease-in-out forwards 200ms,
+             glow 2500ms linear infinite 2000ms;
+}
+
+@keyframes reveal {
+    80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #fff;
+    }
+  }
+
+
+
+
+
+@media only screen and (max-width: 500px){
+  
+  html {
+  scroll-behavior: smooth;
+} 
+
+  body {
+  background: #020228;
+}
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+
+
+  #over03 {
+  position:fixed;
+  top:0;
+  left:0;
+  background: linear-gradient(90deg, #151538 21px, transparent 1%) center, linear-gradient(#151538 21px, transparent 1%) center, #fff;
+    background-size: 22px 22px;
+  width:100%;
+  height:100%;
+  z-index:999999;
+}       
+  
+.inp03 {
+  width:300px;
+  margin:0px auto;
+    border-radius: 50px;
+    border: 2px solid #400c77;
+    margin-top: 60px;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.7);
+    padding: 30px 0;
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+
+.imglogin {
+  width: 150px;
+  height: 60px;
+  margin: 0 auto;
+  background-image: url(Img-Shows/logotipo.png);
+  background-size: 150px 60px;
+  margin-bottom: 15px;
+}
+
+.con03 {
+  width:560px;
+  margin:30px auto;
+}
+    
+.label03 {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  display:block;
+  padding:15px 15px 15px 0;
+  color: #fff;
+  font-family: 'arial', sans-serif;
+  font-size: 19px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+}    
+
+#senha03 {
+    width: 76%;
+    margin: 0 auto;
+    border: 2px solid #7700fa;
+    border-radius: 50px;
+    background: none;
+    color: #fff;
+    padding: 5px 0;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 0px;
+    font-size: 30px;
+    transition: all .5s linear;
+}
+
+#senha03:hover, #senha03:focus, #concluir03:focus{
+  outline: 0;
+  transition: all .5s linear;
+  box-shadow: inset 0px 0px 10px #777;
+  padding-top: 15px;
+  padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+.textointerno::-webkit-input-placeholder { /* WebKit browsers */
+    color: #999;
+    font-size: 16px;
+    font-family: 'arial', sans-serif;
+  letter-spacing: .5px;
+}
+
+#concluir03 {
+  width:85%;
+  margin: 0 auto;
+  position: relative;
+  background: #7700fa;
+  color:#fff;
+  font-family: 'arial', sans-serif;
+border: 2px solid #7700fa;
+    border-radius: 50px;
+  font-size:20px;
+  font-weight:bold;
+  padding:15px 0;
+  cursor:pointer;
+    transition: 0.4s;
+}
+
+#concluir03:hover {
+  width:85%;
+  margin: 0 auto;
+  position: relative;
+  background: #ffbc00;
+  color: #000;
+  border: 2px solid #ffbc00;
+  font-family: 'arial', sans-serif;
+  letter-spacing: .5px;
+  border-radius: 50px;
+  margin: -0px 0 0 0px;
+  padding:15px 0;
+}
+
+.avisosenha03 {
+    width: 240px;
+    margin: 0 auto;
+    margin-top: 35px;
+    padding: 15px 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: .3px;
+    border: 2px solid #4b0082;
+    background-color:rgba(17, 0, 76, 0.5);
+    color: #fff;
+    font-family: 'arial', sans-serif;
+}        
+
+
+
+
+  .logotipomobile {
+    width: 130px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  .topomobile {
+    width: 100%;
+    height: 560px;
+    margin: 0 auto;
+    background-image: url(Img-Shows/mobile/topo.png);
+    background-size: 100% 100%;
+    color: #fff;
+  }
+
+  .topomobile h2 {
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 140px;
+    font-size: 36px;
+    letter-spacing: -1px;
+    line-height: 40px;
+    font-family: 'arial', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .topomobile h3 {
+    width: 310px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: .5px;
+    font-family: 'arial', sans-serif;
+    font-weight: 700;
+    background-color:rgba(0, 0, 0, 0.4);
+    padding: 10px 0;
+  }
+
+  .ctatopo {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .ctatopo button {
+    width: 320px;
+    height: 80px;
+    margin: 0 auto;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    font-family: 'arial', sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 1px #000;
+    background: linear-gradient(140deg,#9625b5,#9625b5,#290a68);
+  background-size: 180% 180%;
+  animation: gradient-animation 3s ease infinite;
+  transition: all 0.4s ease;
+  animation: gradient 3s ease infinite;
+  }
+
+  @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+  .faixaneon {
+    background-image: linear-gradient(to right, #0B63F6 0%, #003CC5 51%, #0B63F6 100%);
+    padding: 20px 0;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .faixaneon p {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .generoshow {
+    margin: 0 auto;
+    margin-top: 60px;
+    background: #020228;
+  }
+
+  .generoshow h2 {
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 0;
+    font-size: 27px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'arial', sans-serif;
+    font-weight: 900;
+  }
+
+  .conteudodiscos {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+  .carddiscos {
+  width: 150px;
+  margin: 0 auto;
+  margin-left: 10px;
+  text-align: center;
+  color: #fff;
+  flex: 1 1 150px;
+}
+
+.carddiscos img {
+  transform: scale(1);
+  border: 2px solid #020228;
+  border-radius: 10px;
+  transition: .6s;
+}
+
+.carddiscos h3 {
+  width: 140px;
+  margin: 10px auto;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: .3px;
+  font-family: 'arial', sans-serif;
+  text-transform: uppercase; 
+}
+
+.carddiscos button {
+  width: 150px;
+  padding: 20px 0;
+  border: 2px solid #020228;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  background: linear-gradient(140deg,#9625b5,#9625b5,#290a68);
+  background-size: 180% 180%;
+  animation: gradient-animation 3s ease infinite;
+  transition: .4s;
+}
+
+
+.orgfooter {
+  width: 330px;
+  margin: 45px auto;
+  margin-top: 60px;
+  background-color: #181638;
+  background-image: linear-gradient(19deg, #181638 30%, #040048 100%);
+  color: #fff;
+  padding: 30px 0;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.esqfooter {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.esqfooter ul {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  list-style-type: none;
+}
+
+.esqfooter ul li {
+  padding: 2px 0;
+  font-size: 21px;
+}
+
+.esqfooter ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #ccc;
+  text-transform: uppercase;
+  font-family: 'roboto', sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  transition: .4s;
+}
+
+.esqfooter ul li a:hover {
+  opacity: .7;
+  letter-spacing: 0.2px;
+  color: #fff;
+}
+
+.esqfooter ul li a:visited {
+  color: #fff;
+}
+
+.centrofooter {
+  width: 300px;
+  margin: 30px auto;
+  text-align: center;
+  flex: 1 1 300px;
+}
+
+.centrofooter h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  padding-bottom: 3px;
+}
+
+.centrofooter p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  margin-top: 6px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.dirfooter {
+  width: 300px;
+  margin: 0 auto;
+  flex: 1 1 300px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+    justify-content: center;
+}
+
+.dirfooter img {
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+  border-radius: 15px;
+  transform: scale(1.0);
+  transition: .4s;
+}
+
+.dirfooter img:hover {
+  transform: scale(1.1);
+}
+
+}
+
+
+
+
+
+</style> 
+
+</head>
+
+<body>
+
+
+
+
+<div id="over03">
+<div class="inp03">
+<div class="imglogin">&nbsp;</div>
+<label class="label03" for="password">Digite a sua senha:</label>
+<input type="password" id="senha03" class="textointerno" placeholder="Coloque a sua senha aqui." /><br>
+<div style="margin-top: 10px;"><button id="concluir03">Entrar</button></div>
+<div class="avisosenha03"><legend><span style="font-weight: bold; text-transform: uppercase;" class="amarelo">Importante:</span> Não compartilhe a sua senha com ninguém. Caso aja mais de um computador acessando o painel com a mesma senha, a sua conta será suspensa.</legend></div>
+</div>
+</div>
+
+
+
+
+
+<div class="desktop"> <!-- Aqui inicia-se o código do Desktop -->
+
+<section class="sectopo">
+
+<div class="orglogintopo">
+	
+<div class="esqlogintopo"><img src="Img-Shows/logotipo.png" width="160" height="60"></div>
+
+<div class="dirlogintopo">
+<div class="cont01">Bem-vindo ao Painel dos Shows.</div>
+<div class="cont02"><div class="circle pulse green"></div></div>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="topo">
+
+<div class="orgtopo">
+
+<div class="div01">&nbsp;</div>
+<div class="div02">&nbsp;</div>
+<div class="div03">&nbsp;</div>
+<div class="div04">&nbsp;</div>
+
+</div>
+
+</section>	
+
+
+
+<div class="textoinformativo">
+<div class="conttextoinformativo">
+<div class="paragrafotextoinformativo"><span style="font-weight: 700; color: #ffbc00;">Do lado esquerdo</span>, você escolhe o gênero dos shows.</div>
+<div class="paragrafotextoinformativo"><span style="font-weight: 700; color: #ffbc00;">Do lado direito</span>, você clica no botão <span style="font-weight: 700; color: #ffbc00;">'Baixar agora'</span> para iniciar o download.</div>
+</div>
+</div>
+
+<section class="bgfundo">
+
+<div class="menudiscos">
+
+<div class="esqdiscos">
+  <button class="tablinks" onclick="openCity(event, 'Eletrônicas')" id="defaultOpen">Eletrônicas</button>
+  <a href="#Sertanejo"><button class="tablinks" onclick="openCity(event, 'Sertanejo')">Sertanejo</button></a>
+  <a href="#Axé"><button class="tablinks" onclick="openCity(event, 'Axé')">Axé</button></a>
+  <a href="#Black Music"><button class="tablinks" onclick="openCity(event, 'Black Music')">Black Music</button></a>
+  <a href="#Brega"><button class="tablinks" onclick="openCity(event, 'Brega')">Brega</button></a>
+  <a href="#Country"><button class="tablinks" onclick="openCity(event, 'Country')">Country</button></a>
+  <a href="#Funk"><button class="tablinks" onclick="openCity(event, 'Funk')">Funk</button></a>
+  <a href="#Forró"><button class="tablinks" onclick="openCity(event, 'Forró')">Forró</button></a>
+  <a href="#MPB"><button class="tablinks" onclick="openCity(event, 'MPB')">MPB</button></a>
+  <a href="#Pagode"><button class="tablinks" onclick="openCity(event, 'Pagode')">Pagode e Samba</button></a>
+  <a href="#Pop"><button class="tablinks" onclick="openCity(event, 'Pop')">Pop</button></a>
+  <a href="#Rock"><button class="tablinks" onclick="openCity(event, 'Rock')">Rock</button></a>
+</div>
+
+
+<div class="dirdiscos">
+
+<div id="Eletrônicas" class="tabcontent">
+<h2><div class="tituloanimado">Shows de Eletrônicas</div></h2>
+
+<div class="conteudodiscos">
+
+<div class="carddiscos">
+<img src="Img-Shows/img190.png" width="300" height="450" loading="lazy">
+<h3>DAFT PUNK - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/6qa5odiusawksc8/ELETR%25C3%2594NICA-Daft_Punk_-_ALIVE_2021__EPILOGUE-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img189.png" width="300" height="450" loading="lazy">
+<h3>DAVID GUETTA - LIVE FESTIVAL SHOW</h3>
+<a href="https://www.mediafire.com/file_premium/7s5rlihjwja0v0w/ELETR%25C3%2594NICA-David_Guetta%2527s_Live_DJ_Set_From_UNTOLD_Festival_2023.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img191.png" width="300" height="450" loading="lazy">
+<h3>DEPECHE MODE - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/8gnkq38g48yum75/ELETR%25C3%2594NICA-Depeche_Mode_live_Barcelona_Primavera_Sound_2023-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img192.png" width="300" height="450" loading="lazy">
+<h3>GIGI D´AGOSTINO - SHOW L´AMOUR TOUJOURS</h3>
+<a href="https://www.mediafire.com/file_premium/ec3p8kmxe64nc7d/ELETR%25C3%2594NICA-Gigi_D%2527_Agostino_-_L%2527amour_Toujours_DJ_Set_%2528Mi_Velenc%25C3%25A9nk_Fesztiv%25C3%25A1l_2017%2529-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img193.png" width="300" height="450" loading="lazy">
+<h3>LASGO - SHOW PLANETA POP FESTIVAL</h3>
+<a href="https://www.mediafire.com/file_premium/i40m2vqnpokhirp/ELETR%25C3%2594NICA-Lasgo_vs_Ian_Van_Dahl_-_Planet_Pop_Festival_3-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img194.png" width="300" height="450" loading="lazy">
+<h3>Swedish House Mafia - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/xdx6fkjuckcnn9g/ELETR%25C3%2594NICA-Swedish_House_Mafia_Big_Slap_Malm%25C3%25B6_2023-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img01.png" width="300" height="450" loading="lazy">
+<h3>ALOK PRESENTS ALIVE (LIVESTREAM SHOW)</h3>
+<a href="https://www.mediafire.com/file_premium/c7mk2gjtkic24he/ALOK_presents_ALIVE_%2528Livestream_Show%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img02.png" width="300" height="450" loading="lazy">
+<h3>AFROJACK - LIVE ULTRA MUSIC SHOW</h3>
+<a href="https://www.mediafire.com/file_premium/0k6xmp1xx8r768l/Afrojack_Live_%2540_Tomorrowland_2022.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img03.png" width="300" height="450" loading="lazy">
+<h3>DMITRI VEGAS & LIKE MIKE | LIVE AT TOMORROWLAND MAINSTAGE</h3>
+<a href="https://www.mediafire.com/file_premium/s963qs3y5mb4b0o/Dimitri_Vegas_%2526_Like_Mike_Live_At_Tomorrowland_2022_Mainstage_%2528FULL_SET_HD%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img04.png" width="300" height="450" loading="lazy">
+<h3>DAVID GUETTA LIVE @ CREAMFIELDS NORTH</h3>
+<a href="https://www.mediafire.com/file_premium/al2vnso1kg4zxrd/David_Guetta_LIVE_%2540_Creamfields_North_2022.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img05.png" width="300" height="450" loading="lazy">
+<h3>MARTIN GARRIX LIVE @ TOMORROWLAND</h3>
+<a href="https://www.mediafire.com/file_premium/l1sl87yof5u6zd2/MARTIN_GARRIX_LIVE_%2540_TOMORROWLAND_2022.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img06.png" width="300" height="450" loading="lazy">
+<h3>NICKY ROMERO LIVE AT TOMORROWLAND - MAINSTAGE</h3>
+<a href="https://www.mediafire.com/file_premium/yvybn8t4ni0rgdr/Nicky_Romero_LIVE_at_Tomorrowland_2022_-_Mainstage.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img07.png" width="300" height="450" loading="lazy">
+<h3>HARDWELL LIVE AT TOMORROWLAND</h3>
+<a href="https://www.mediafire.com/file_premium/i0yqgvpfsqaebl5/Hardwell_Live_at_Tomorrowland_2022_%255BFULL_SET%255D.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img08.png" width="300" height="450" loading="lazy">
+<h3>VINTAGE CULTURE | TOMORROWLAND - WE2</h3>
+<a href="https://www.mediafire.com/file_premium/hw6hgnavf73j5ik/Vintage_Culture_Tomorrowland_2022_-_WE2.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img09.png" width="300" height="450" loading="lazy">
+<h3>MARSHMELLO LIVE MUSIC @ EXPO DUBAI</h3>
+<a href="https://www.mediafire.com/file_premium/fzq6iqt6398u1ie/Marshmello_Live_%2540_Expo_Dubai_2022_FULL_SET_LIVE.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img10.png" width="300" height="450" loading="lazy">
+<h3>CALVIN HARRIS FULL SET | LIVE AT CAPITAL’S SUMMERTIME BALL</h3>
+<a href="https://www.mediafire.com/file_premium/pmxj1jsbfd22ffx/Calvin_Harris_Full_Set_Live_at_Capital%25E2%2580%2599s_Summertime_Ball_2019.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img11.png" width="300" height="450" loading="lazy">
+<h3>AVICII LIVE TOMORROWLAND BELGIUM</h3>
+<a href="https://www.mediafire.com/file_premium/4a5fwuq9zdrusin/Avicii_Live_Tomorrowland_Belgium_2015_%2528Full_Set%2529_%2528HD%2529_%2528Avicii_Live%2529_%2528Avicii_Tribute%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img12.png" width="300" height="450" loading="lazy">
+<h3>DJ ROSS VS DOUBLE YOU - PLANET POP FESTIVAL</h3>
+<a href="https://www.mediafire.com/file_premium/2u1x9rnqhgt86iy/DJ_Ross_vs._Double_You_-_Planet_Pop_Festival_3_%2528Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+<div id="Sertanejo" class="tabcontent">
+<h2><div class="tituloanimado">Shows de Sertanejo</div></h2>
+
+<div class="conteudodiscos">
+<div class="carddiscos">
+<img src="Img-Shows/img13.png" width="300" height="450" loading="lazy">
+<h3>ZEZÉ DI CAMARGO & LUCIANO - FLORES EM VIDA</h3>
+<a href="https://www.mediafire.com/file_premium/3hsgu17a05j09x9/zeze_di_camargo_e_luciano_Flores_em_vida_DVD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img14.png" width="300" height="450" loading="lazy">
+<h3>PAULA FERNANDES - SHOW UM SER AMOR</h3>
+<a href="https://www.mediafire.com/file_premium/xp8lg20bxrwm4v1/UM_SER_AMOR_Paula_Fernandes.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img213.png" width="300" height="450" loading="lazy">
+<h3>ANA CASTELA - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/645cjrzmkxdn3p2/SERTANEJO-Ana_Castela_-_Festival_de_Alegre_2023-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img214.png" width="300" height="450" loading="lazy">
+<h3>BRUNO E MARRONE - REVIVENDO A SUA HISTÓRIA</h3>
+<a href="https://www.mediafire.com/file_premium/agvcnjfmc8h6xr6/SERTANEJO-Bruno_%2526_Marrone_-_Revivem_Sua_Hist%25C3%25B3ria_%2528Ao_vivo_em_Belo_Horizonte%2529-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img215.png" width="300" height="450" loading="lazy">
+<h3>GUSTTAVO LIMA - FESTIVAL DE ALEGRE COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/d4lhha7otsfjbir/SERTANEJO-Gusttavo_Lima_-_Festival_de_Alegre_2023-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img216.png" width="300" height="450" loading="lazy">
+<h3>SIMONE MENDES - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/2o9c9frvzj84zk1/SERTANEJO-Simone_Mendes_Ao_Vivo_em_Campina_Grande-PB_-_O_Maior_S%25C3%25A3o_Jo%25C3%25A3o_do_Mundo_2023-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img217.png" width="300" height="450" loading="lazy">
+<h3>ZÉ NETO E CRISTIANO - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/7fsbjny55ezpx3b/SERTANEJO-Z%25C3%25A9_Neto_e_Cristiano_-_Caldas_Country_2019-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img15.png" width="300" height="450" loading="lazy">
+<h3>MARÍLIA MENDONÇA - DVD COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/7cqup81w4zso8ph/MAR%25C3%258DLIA_MENDON%25C3%2587A_-_DVD_COMPLETO_TOP_10.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img16.png" width="300" height="450" loading="lazy">
+<h3>HENRIQUE E JULIANO - SHOW AO VIVO</h3>
+<a href="https://www.mediafire.com/file_premium/929wgmnbx6ewrk9/Henrique_e_Juliano_-_Ao_Vivo_Em_Parauapebas_2020_%2528SHOW_COMPLETO%2529_%255BDVD_LIVE%255D.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img17.png" width="300" height="450" loading="lazy">
+<h3>GUSTTAVO LIMA - CALDAS COUNTRY</h3>
+<a href="https://www.mediafire.com/file_premium/jbttcyw5mdojbrf/Gusttavo_Lima_-_Caldas_Country_2019_%2528SHOW_COMPLETO%2529_-_DVD_O_EMBAIXADOR_BUTECO_Live.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img18.png" width="300" height="450" loading="lazy">
+<h3>MAIARA E MARAISA - CANEDO FEST SHOW</h3>
+<a href="https://www.mediafire.com/file_premium/6wfkbg5wmfbi2vy/Maiara_e_Maraisa_-_Senador_Canedo_GO_-_Canedo_Fest_Show_-_Junho_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img19.png" width="300" height="450" loading="lazy">
+<h3>BRUNO E MARRONE - DVD COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/vh38kndq71cmy1u/Bruno_e_Marrone_-_Dvd_Completo_2018.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img20.png" width="300" height="450" loading="lazy">
+<h3>SIMONE E SIMARIA - CALDAS COUNTRY</h3>
+<a href="https://www.mediafire.com/file_premium/79hlub63crr49bc/Simone_e_Simaria_-_Caldas_Country_2019_%2528SHOW_COMPLETO%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img21.png" width="300" height="450" loading="lazy">
+<h3>JORGE E MATEUS - SHOW COMPLETO AO VIVO</h3>
+<a href="https://www.mediafire.com/file_premium/qle7pn86rwxu68u/JORGE_E_MATEUS_Show_Completo_em_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img22.png" width="300" height="450" loading="lazy">
+<h3>GUSTAVO MIOTO - SHOW SEM CORTES</h3>
+<a href="https://www.mediafire.com/file_premium/hdfgqt9ce3oc3ao/Gustavo_Mioto_Sem_Cortes_-_Ao_Vivo_Em_Jaguari%25C3%25BAna_1_10_-_Ano_X.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img23.png" width="300" height="450" loading="lazy">
+<h3>CHITÃOZINHO E XORORÓ - GRANDES CLÁSSICOS</h3>
+<a href="https://www.mediafire.com/file_premium/648m94dvxffvoqv/DVD_Chit%25C3%25A3ozinho_e_Xoror%25C3%25B3_-_Grandes_Cl%25C3%25A1ssicos_Ac%25C3%25BAsticos.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img24.png" width="300" height="450" loading="lazy">
+<h3>DANIEL - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/k5vdx40svhmtj7w/Daniel_Ao_Vivo_20_Anos_De_Carreira_2003_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img25.png" width="300" height="450" loading="lazy">
+<h3>CÉSAR MENOTTI E FABIANO - MEMÓRIAS ANOS 80 E 90</h3>
+<a href="https://www.mediafire.com/file_premium/1df5r9hmjpweo99/C%25C3%25A9sar_Menotti_e_Fabiano_Mem%25C3%25B3rias_Anos_80_e_90_Ao_Vivo_2015_DVD_RIP_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img26.png" width="300" height="450" loading="lazy">
+<h3>CRISTIANO ARAUJO - DVD COMPLETO EM CUIABÁ</h3>
+<a href="https://www.mediafire.com/file_premium/9l29c368x9wwdns/Cristiano_araujo_DVD_completo_em_Cuiab%25C3%25A1.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img27.png" width="300" height="450" loading="lazy">
+<h3>MILIONÁRIO E JOSÉ RICO - ATRAVESSANDO GERAÇÕES</h3>
+<a href="https://www.mediafire.com/file_premium/l80pfb8k9qwg1u8/Dvd_Milionario_e_Jose_Rico_Atravessando_Gera%25C3%25A7%25C3%25B5es.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img28.png" width="300" height="450" loading="lazy">
+<h3>LUAN SANTANA - ESPAÇO DAS AMÉRICAS</h3>
+<a href="https://www.mediafire.com/file_premium/sc00xxuau3yn6m1/Luan_Santana__-_S%25C3%25A3o_Paulo_SP_-_Espa%25C3%25A7o_das_Am%25C3%25A9ricas_-_Dezembro_2021_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img29.png" width="300" height="450" loading="lazy">
+<h3>MATHEUS & KAUAN - 35º FESTIVAL DO QUIABO</h3>
+<a href="https://www.mediafire.com/file_premium/25yyn8jcf9ckh59/Matheus_%2526_Kauan_-_Alpercata_MG_-_35%25C2%25BA_Festival_do_Quiabo_-_Maio_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img30.png" width="300" height="450" loading="lazy">
+<h3>GIAN & GIOVANI - UMA HISTÓRIA DE SUCESSO</h3>
+<a href="https://www.mediafire.com/file_premium/ncsnvi78254mxll/Gian_%2526_Giovani_-_Uma_Hist%25C3%25B3ria_De_Sucesso_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img31.png" width="300" height="450" loading="lazy">
+<h3>LEONARDO NO GAROTA VIP - FORTALEZA</h3>
+<a href="https://www.mediafire.com/file_premium/b3cgth1msn9g1dl/LEONARDO_AO_VIVO_NO_GAROTA_VIP_FORTALEZA_-_MAIO_2022_-_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img32.png" width="300" height="450" loading="lazy">
+<h3>EDUARDO COSTA - 50 TONS - SÓ MODÃO</h3>
+<a href="https://www.mediafire.com/file_premium/fiyyhgly396w52u/Live_Eduardo_Costa_50_Tons_S%25C3%25B3_Mod%25C3%25A3o_Apaixonado.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img33.png" width="300" height="450" loading="lazy">
+<h3>HUGO E GUILHERME EM CANAÃ DOS CARAJÁS-PA</h3>
+<a href="https://www.mediafire.com/file_premium/0gr089qealq9onk/Show_completo_de_Hugo_e_Guilherme_em_Cana%25C3%25A3_dos_Caraj%25C3%25A1s-PA.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img34.png" width="300" height="450" loading="lazy">
+<h3>GUILHERME & SANTIAGO - 20 ANOS AO VIVO</h3>
+<a href="https://www.mediafire.com/file_premium/l3qhf8u1vgyl7g0/Guilherme_%2526_Santiago_-_20_Anos_%255BDVD_Completo%255D.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img35.png" width="300" height="450" loading="lazy">
+<h3>JOÃO BOSCO & VINÍCIUS - CÉU DE SÃO PAULO</h3>
+<a href="https://www.mediafire.com/file_premium/ns65zw9m63hpmrn/Jo%25C3%25A3o_Bosco_%2526_Vin%25C3%25ADcius_-_C%25C3%25A9u_de_S%25C3%25A3o_Paulo_%2528DVD_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img36.png" width="300" height="450" loading="lazy">
+<h3>JOÃO NETO E FREDERICO - SÓ AS MELHORES</h3>
+<a href="https://www.mediafire.com/file_premium/ds0miad49ta3ae0/Jo%25C3%25A3o_Neto_e_Frederico_s%25C3%25B3_as_melhores_dvd_completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img37.png" width="300" height="450" loading="lazy">
+<h3>VICTOR E LÉO - SHOW AO VIVO DOS IRMÃOS</h3>
+<a href="https://www.mediafire.com/file_premium/a6vlwwiwpyqdwhy/Victor_e_L%25C3%25A9o_DVD_IRM%25C3%2583OS.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img38.png" width="300" height="450" loading="lazy">
+<h3>EDSON & HUDSON - DVD AMOR + BOTECO</h3>
+<a href="https://www.mediafire.com/file_premium/7m06izhbhyu7zhd/Edson_%2526_Hudson_-_DVD_Amor_%252B_Boteco_2019.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img39.png" width="300" height="450" loading="lazy">
+<h3>NAIARA AZEVEDO NA FESTA DE SANT'ANA DE CAICÓ</h3>
+<a href="https://www.mediafire.com/file_premium/rqs9nrnyo81kltu/Naiara_Azevedo_na_Festa_de_Sant%2527Ana_de_Caic%25C3%25B3.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img40.png" width="300" height="450" loading="lazy">
+<h3>ISRAEL E RODOLFFO - CANEDO FEST SHOW</h3>
+<a href="https://www.mediafire.com/file_premium/x1cwuyxssgvfjhq/Israel_e_Rodolffo_-_Senador_Canedo_GO_-_Canedo_Fest_Show_-_Junho_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img41.png" width="300" height="450" loading="lazy">
+<h3>FERNANDO E SOROCABA - ACÚSTICO NA ÓPERA DE ARAME</h3>
+<a href="https://www.mediafire.com/file_premium/coz7e8cfwqsi61y/FERNANDO_E_SOROCABA_AC%25C3%259ASTICO_NA_%25C3%2593PERA_DE_ARAME_DVD_2012_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img42.png" width="300" height="450" loading="lazy">
+<h3>THAEME E THIAGO - SHOW EXPO PALMA</h3>
+<a href="https://www.mediafire.com/file_premium/wznmvu6jjfh4v1k/Thaeme_e_Thiago_-_Palma_MG_-_Expo_Palma_-_Julho_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img43.png" width="300" height="450" loading="lazy">
+<h3>DIEGO E VICTOR HUGO - FESTIVAL LUAN CITY</h3>
+<a href="https://www.mediafire.com/file_premium/j4h4cnpvlqijien/Diego_e_Victor_Hugo_ao_vivo_-_Festival_Luan_city_em_Goi%25C3%25A2nia.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img44.png" width="300" height="450" loading="lazy">
+<h3>RICK E RENNER | DVD 10 ANOS ACÚSTICO</h3>
+<a href="https://www.mediafire.com/file_premium/eajznxb8ipuq5zy/DVD_10_ANOS_AC%25C3%259ASTICO_Rick_e_Renner.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img45.png" width="300" height="450" loading="lazy">
+<h3>WESLEY SAFADÃO - RIO DE JANEIRO</h3>
+<a href="https://www.mediafire.com/file_premium/8ltlqv1mbme49q3/Wesley_Safad%25C3%25A3o_-_Rio_de_Janeiro_%2528DVD_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img46.png" width="300" height="450" loading="lazy">
+<h3>MURILO HUFF - SHOW EXPOABRA 2022</h3>
+<a href="https://www.mediafire.com/file_premium/magfednn77gk06i/MURILO_HUFF_AO_VIVO_EM_BRAS%25C3%258DLIA_-_DF_EXPOABRA_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img13.png" width="300" height="450" loading="lazy">
+<h3>ZEZÉ DI CAMARGO & LUCIANO - FLORES EM VIDA</h3>
+<a href="https://www.mediafire.com/file_premium/3hsgu17a05j09x9/zeze_di_camargo_e_luciano_Flores_em_vida_DVD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img14a.png" width="300" height="450" loading="lazy">
+<h3>PAULA FERNANDES - SHOW AO VIVO ORIGENS</h3>
+<a href="https://www.mediafire.com/file_premium/2jy9zt9jiqmp7rl/SERTANEJO-Paula_Fernandes_-_DVD_Origen_%2528Ao_Vivo_em_Sete_Lagoas%2529-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+<div id="Axé" class="tabcontent">
+<h2><div class="tituloanimado">Shows de Axé</div></h2>
+
+<div class="conteudodiscos">
+
+<div class="carddiscos">
+<img src="Img-Shows/img178.png" width="300" height="450" loading="lazy">
+<h3>CLAUDIA LEITTE - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/uuyegisswdaa3pg/AX%25C3%2589-Claudia_Leitte_-__Ao_Vivo-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img179.png" width="300" height="450" loading="lazy">
+<h3>NETINHO - SHOW AO VIVO EM LISBOA/PORTUGAL</h3>
+<a href="https://www.mediafire.com/file_premium/xrxe4la2ib0p3c0/AX%25C3%2589-Netinho_-_Lisboa%252C_Portugal_1998-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>  
+
+<div class="carddiscos">
+<img src="Img-Shows/img180.png" width="300" height="450" loading="lazy">
+<h3>BANDA EVA - SHOW AO VIVO EM NORONHA</h3>
+<a href="https://www.mediafire.com/file_premium/t4ul8cig2pz86lm/AX%25C3%2589-Banda_Eva_Em_Noronha_-_2022-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img47a.png" width="300" height="450" loading="lazy">
+<h3>IVETE SANGALO - SHOW COMPLETO AO VIVO</h3>
+<a href="https://www.mediafire.com/file_premium/c6llfz70rhjxpwd/IVETE_SANGALO__-_VIRADA_SALVADOR__-_completo_-_2023.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img47.png" width="300" height="450" loading="lazy">
+<h3>CHICLETE COM BANANA - SÃO PEDRO DE IBIRAPITANGA</h3>
+<a href="https://www.mediafire.com/file_premium/tm18u3t8oybi05e/DvD_-_Chiclete_Com_Banana_-_S%25C3%25A3o_Pedro_de_Ibirapitanga_-_Ba_-_2022.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img48.png" width="300" height="450" loading="lazy">
+<h3>É O TCHAN - SHOW AO VIVO DE 10 ANOS</h3>
+<a href="https://www.mediafire.com/file_premium/h769dibdc6rl9b6/dvd_e_o_tchan_ao_vivo_10_anos.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img49.png" width="300" height="450" loading="lazy">
+<h3>DANIELA MERCURY - FESTIVAL DA VIRADA SALVADOR</h3>
+<a href="https://www.mediafire.com/file_premium/hvr4du0dx6huir7/Daniela_Mercury_ao_vivo_no_Festival_da_Virada_Salvador_2022_2023_-_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img50.png" width="300" height="450" loading="lazy">
+<h3>BABADO NOVO - SHOW AO VIVO UAU!</h3>
+<a href="https://www.mediafire.com/file_premium/opspaliatedswlj/Babado_Novo_Uau%2521_Ao_Vivo_em_Salvador_%2528DVD_Completo_HD%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img51.png" width="300" height="450" loading="lazy">
+<h3>LÉO SANTANA AO VIVO NO GAROTA VIP</h3>
+<a href="https://www.mediafire.com/file_premium/3sm9j5ctd9bmufs/L%25C3%2589O_SANTANA_AO_VIVO_NO_GAROTA_VIP_S%25C3%2583O_PAULO_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<div id="Black Music" class="tabcontent">
+<h2><div class="tituloanimado">Shows de Black Music</div></h2>
+
+<div class="conteudodiscos">
+
+<div class="carddiscos">
+<img src="Img-Shows/img182.png" width="300" height="450" loading="lazy">
+<h3>B.B. KING - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/mana1m4cc6ytfsz/BLACK_M%25C3%259ASIC-BB_King_Live_2008_1080p-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img183.png" width="300" height="450" loading="lazy">
+<h3>BOB MARLEY - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/u57l38mz1rh4tgn/BLACK_MUSIC-Bob_Marley_%2526_The_Wailers_-_live_Rainbow_Theatre%252C_London_1977-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img181.png" width="300" height="450" loading="lazy">
+<h3>MICHAEL JACKSON - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/0ejv6pa51w7u53a/BLACK_MUSIC-Michael_Jackson_-_Live_in_Munich_1997-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img52.png" width="300" height="450" loading="lazy">
+<h3>RAY CHARLES - LIVE IN CONCERT WITH DIANE SCHUUR</h3>
+<a href="https://www.mediafire.com/file_premium/oqr0lhhattj0gfg/Ray_Charles_Live_in_Concert_with_Diane_Schuur_1999_Full.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img53.png" width="300" height="450" loading="lazy">
+<h3>JAMES BROWN - Show Live ao vivo</h3>
+<a href="https://www.mediafire.com/file_premium/vuw6u71x6rt2k96/James_Brown_Live_-_completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img54.png" width="300" height="450" loading="lazy">
+<h3>ARETHA FRANKLIN - QUEEN OF SOUL</h3>
+<a href="https://www.mediafire.com/file_premium/pccooq9i6yvc0qq/Aretha_Franklin_-_Queen_Of_Soul_%25281986%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img55.png" width="300" height="450" loading="lazy">
+<h3>STEVIE WONDER NO RIO DE JANEIRO</h3>
+<a href="https://www.mediafire.com/file_premium/bslq4e6qjvbmldn/Stevie_Wonder_in_Rio_-_2011.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img56.png" width="300" height="450" loading="lazy">
+<h3>MARVIN GAYE - LIVE IN BELGIUM 1981</h3>
+<a href="https://www.mediafire.com/file_premium/f72m08utbvrun8f/Marvin_Gaye_-_Live_In__Belgium_1981__%2523MarvinGayeLive_%2523OstendBelgium.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img57.png" width="300" height="450" loading="lazy">
+<h3>MICHAEL JACKSON - LIVE IN BUCHAREST</h3>
+<a href="https://www.mediafire.com/file_premium/bp3ranpqzm6k8ec/Michael_Jackson_-_Live_In_Bucharest_%2528The_Dangerous_Tour%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img58.png" width="300" height="450" loading="lazy">
+<h3>AMY WINEHOUSE - LIVE IN LONDON</h3>
+<a href="https://www.mediafire.com/file_premium/m69a3n28rvdeafi/Amy_Winehouse_-_Live_in_London_2007_%2528Full_Concert%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+<div id="Brega" class="tabcontent">
+<h2><div class="tituloanimado">Shows de Brega</div></h2>
+
+<div class="conteudodiscos">
+
+<div class="carddiscos">
+<img src="Img-Shows/img185.png" width="300" height="450" loading="lazy">
+<h3>ZEZO POTIGUAR - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/vqopzvowhmolokt/BREGA-Zezo_Ao_Vivo_-_Explode_Cora%25C3%25A7%25C3%25A3o-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>  
+
+<div class="carddiscos">
+<img src="Img-Shows/img184.png" width="300" height="450" loading="lazy">
+<h3>JOSÉ AUGUSTO - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/uho3x0lzm44ny4a/BREGA-Jos%25C3%25A9_Augusto_-_Aguenta_Cora%25C3%25A7%25C3%25A3o_%2528Ao_Vivo%2529-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img59.png" width="300" height="450" loading="lazy">
+<h3>AMADO BATISTA - COMPLETO 40 ANOS</h3>
+<a href="https://www.mediafire.com/file_premium/2j11p093hdwgft2/DVD_AMADO_BATISTA_COMPLETO_40_ANOS.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img60.png" width="300" height="450" loading="lazy">
+<h3>REGINADO ROSSI NO CABARET - AO VIVO</h3>
+<a href="https://www.mediafire.com/file_premium/des1xd66yx0ikbs/Reginado_Rossi_no_Cabaret_DVD_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img61.png" width="300" height="450" loading="lazy">
+<h3>CRISTIANO NEVES - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/a7cuqlr9gsiezbt/Cristiano_Neves_-_Ao_Vivo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img62.png" width="300" height="450" loading="lazy">
+<h3>BARTÔ GALENO - FEIRA SÃO CRISTÓVÃO</h3>
+<a href="https://www.mediafire.com/file_premium/ejplcii9yg4e3m4/BART%25C3%2594_GALENO_DVD_Completo_Feira_S%25C3%25A3o_Crist%25C3%25B3v%25C3%25A3o_Part._BARTOZINHO_GALENO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img63.png" width="300" height="450" loading="lazy">
+<h3>SIDNEY MAGAL E CONVIDADOS - BAILAMOS</h3>
+<a href="https://www.mediafire.com/file_premium/vnziyb1qzpc5ack/BAILAMOS_AO_VIVO_SIDNEY_MAGAL_E_CONVIDADOS.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img64.png" width="300" height="450" loading="lazy">
+<h3>WALDICK SORIANO & ORQUESTRA - AO VIVO</h3>
+<a href="https://www.mediafire.com/file_premium/ualxyhoky21kmdm/Waldick_Soriano_%2526_Orquestra_Ao_Vivo_2007_-_DVD_Completo%252C_c__sele%25C3%25A7%25C3%25A3o_de_M%25C3%25BAsicas_%2528720p_HD%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img65.png" width="300" height="450" loading="lazy">
+<h3>ROBERTO CARLOS - 50 ANOS DE CARREIRA</h3>
+<a href="https://www.mediafire.com/file_premium/yxmkb9bcxi0nu60/2009_-_Roberto_Carlos__-_50_Anos_de_Crreira_%2528HDTV%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+<div id="Country" class="tabcontent">
+<h2><div class="tituloanimado">Shows de Country</div></h2>
+
+<div class="conteudodiscos">
+
+<div class="carddiscos">
+<img src="Img-Shows/img186.png" width="300" height="450" loading="lazy">
+<h3>ALAN JACKSON - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/lodbwacoypfhqj6/COUNTRY-Alan_Jackson__-_Best_Songs_of_Alan_Jackson_Live_-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img187.png" width="300" height="450" loading="lazy">
+<h3>JOHNNY CASH - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/70c9r4ou591b3zs/COUNTRY-Johnny_Cash_Live_at_Manhattan_Center-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img188.png" width="300" height="450" loading="lazy">
+<h3>SHANIA TWAIN - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/725jciinu4oeu47/COUNTRY-Shania_Twain_-_Austin_City_Limits_2023-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img66.png" width="300" height="450" loading="lazy">
+<h3>ALAN JACKSON - SHOW AQUAPALOOZA</h3>
+<a href="https://www.mediafire.com/file_premium/18g3hk2k7lvzru7/Alan_Jackson_-_Aquapalooza_2009_FULL_CONCERT.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+<div id="Funk" class="tabcontent">
+<h2><div class="tituloanimado">Shows de Funk</div></h2>
+
+<div class="conteudodiscos">
+
+<div class="carddiscos">
+<img src="Img-Shows/img67.png" width="300" height="450" loading="lazy">
+<h3>BONDE DO TIGRÃO - O BAILE TODO</h3>
+<a href="https://www.mediafire.com/file_premium/sw05jn3ntfgld0m/BONDE_DO_TIGR%25C3%2583O_-_DVD_O_BAILE_TODO_%2528COMPLETO%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img68.png" width="300" height="450" loading="lazy">
+<h3>FURACÃO 2000 - FUNK DE VERDADE</h3>
+<a href="https://www.mediafire.com/file_premium/20iskelzvb7pu8u/DVD_Furaca%25CC%2583o_2000_-_Funk_de_Verdade_%2528COMPLETO%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img69.png" width="300" height="450" loading="lazy">
+<h3>ANITTA - ROCK IN RIO BRAZIL</h3>
+<a href="https://www.mediafire.com/file_premium/0h0qju3i5kbjg8g/Anitta_Rock_In_Rio_2019__ANITTA_AO_VIVO_NO_RIR_19_BRASIL-_Live_Full_Concert_-_FULL_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img70.png" width="300" height="450" loading="lazy">
+<h3>LUDMILLA - GAROTA VIP MANAUS</h3>
+<a href="https://www.mediafire.com/file_premium/0769i09f226mvts/Ludmilla_-_Garota_Vip_Manaus_Am_2022-_Show_completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>  
+
+<div class="carddiscos">
+<img src="Img-Shows/img199.png" width="300" height="450" loading="lazy">
+<h3>MC NALDINHO - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/w4y3dyovcyc9a6s/FUNK-MC_Naldinho_A_hist%25C3%25B3ria_do_funk_ao_vivo_na_Roda_de_Funk-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img200.png" width="300" height="450" loading="lazy">
+<h3>MC SERGINHO - AO VIVO NO BAILE TODO</h3>
+<a href="https://www.mediafire.com/file_premium/fh3i77xbroz11k3/FUNK-MC_Serginho_Ao_vivo_e_pela_primeira_vez_na_Roda_de_Funk-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img71.png" width="300" height="450" loading="lazy">
+<h3>MC MARCINHO - TUDO É FESTA</h3>
+<a href="https://www.mediafire.com/file_premium/wwkjxfdp0l0x68c/Mc_Marcinho_DVD_Completo_Tudo_%25C3%25A9_Festa.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img72.png" width="300" height="450" loading="lazy">
+<h3>MC LEOZINHO - AO VIVO</h3>
+<a href="https://www.mediafire.com/file_premium/dwyx33vstkqb482/DVD_MC_LEOZINHO_AO_VIVO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+<div id="Forró" class="tabcontent">
+<h2><div class="tituloanimado">Shows de Forró</div></h2>
+
+<div class="conteudodiscos">
+
+<div class="carddiscos">
+<img src="Img-Shows/img45.png" width="300" height="450" loading="lazy">
+<h3>WESLEY SAFADÃO - RIO DE JANEIRO</h3>
+<a href="https://www.mediafire.com/file_premium/8ltlqv1mbme49q3/Wesley_Safad%25C3%25A3o_-_Rio_de_Janeiro_%2528DVD_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img195.png" width="300" height="450" loading="lazy">
+<h3>Barões da Pisadinha - Show ao vivo completo</h3>
+<a href="https://www.mediafire.com/file_premium/kq2eorlbcjpjpgf/FORR%25C3%2593-Bar%25C3%25B5es_da_Pisadinha_-_BBQ_MIX_Goi%25C3%25A2nia-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img196.png" width="300" height="450" loading="lazy">
+<h3>Calcinha preta - Show ao vivo completo</h3>
+<a href="https://www.mediafire.com/file_premium/8hdys4qogrmi65q/FORR%25C3%2593-Calcinha_Preta_-__%2523CP25anos_%2528Ao_Vivo_em_Aracaju%2529-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img197.png" width="300" height="450" loading="lazy">
+<h3>Falamansa - Show ao vivo completo</h3>
+<a href="https://www.mediafire.com/file_premium/xxgkv0j71iq9o8x/FORR%25C3%2593-Falamansa-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img198.png" width="300" height="450" loading="lazy">
+<h3>Luiz Gonzaga - Show ao vivo completo</h3>
+<a href="https://www.mediafire.com/file_premium/rk6chmnzao8kvg2/FORR%25C3%2593-Luiz_Gonzaga_no_Guaruj%25C3%25A1_AO_VIVO-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img73.png" width="300" height="450" loading="lazy">
+<h3>OS BARÕES DA PISADINHA - SHOW AO VIVO</h3>
+<a href="https://www.mediafire.com/file_premium/mdy75nyrp4l401s/Os_Bar%25C3%25B5es_da_Pisadinha_-_Itacoatiara_AM_-_Aniversario_de_148_Anos_-_Abril_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img74.png" width="300" height="450" loading="lazy">
+<h3>JOÃO GOMES AO VIVO NO FESTIVAL EXPOCRATO</h3>
+<a href="https://www.mediafire.com/file_premium/i2ax9mgqc81sn84/JO%25C3%2583O_GOMES_AO_VIVO_NO_FESTIVAL_EXPOCRATO_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img75.png" width="300" height="450" loading="lazy">
+<h3>ZÉ VAQUEIRO - SÍTIO DO MATO - AO VIVO</h3>
+<a href="https://www.mediafire.com/file_premium/23gomc7bo7qp0sj/Z%25C3%25A9_Vaqueiro_-_S%25C3%25ADtio_do_Mato_BA_-_Aniversario_de_33_Anos_-_Janeiro_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img76.png" width="300" height="450" loading="lazy">
+<h3>VITOR FERNANDES AO VIVO EM SAPÉ</h3>
+<a href="https://www.mediafire.com/file_premium/fgnvpc4gcyxhowz/VITOR_FERNANDES_AO_VIVO_EM_SAP%25C3%2589_-_PB_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img77.png" width="300" height="450" loading="lazy">
+<h3>DORGIVAL DANTAS - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/wmro4bvkt3urvr9/Dorgival_Dantas_show_completo_HD_em__panelas_PE_2022.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img78.png" width="300" height="450" loading="lazy">
+<h3>CALCINHA PRETA - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/ttqn5v7q4ojhe2i/Calcinha_Preta_-_DVD_Completo_%2523ComoN%25C3%25A3oAmar_%2528Ao_Vivo_em_Bel%25C3%25A9m_do_Par%25C3%25A1%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img79.png" width="300" height="450" loading="lazy">
+<h3>XAND AVIÃO AO VIVO NO AVIÕES FANTASY</h3>
+<a href="https://www.mediafire.com/file_premium/5k86q4fwdbpag1r/XAND_AVI%25C3%2583O_AO_VIVO_NO_AVI%25C3%2595ES_FANTASY_2022.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img80.png" width="300" height="450" loading="lazy">
+<h3>AVIÕES DO FORRÓ - SUNSET AO VIVO</h3>
+<a href="https://www.mediafire.com/file_premium/22watc2jkeai0z7/Avi%25C3%25B5es_Do_Forr%25C3%25B3_Sunset_Dvd_Completo_2015_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img81.png" width="300" height="450" loading="lazy">
+<h3>FALAMANSA - #CULTURAEMCASA MUSICAL</h3>
+<a href="https://www.mediafire.com/file_premium/gxmnb98fnj21wt2/FALAMANSA_%2523CulturaEmCasa_Musical.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img82.png" width="300" height="450" loading="lazy">
+<h3>JONAS ESTICADO - EM SERRA TALHADA</h3>
+<a href="https://www.mediafire.com/file_premium/qkhxjtu40zcxo0m/JONAS_ESTICADO_AO_VIVO_EM_SERRA_TALHADA_-_PE_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img83.png" width="300" height="450" loading="lazy">
+<h3>DESEJO DE MENINA - EM ÁGUA BRANCA</h3>
+<a href="https://www.mediafire.com/file_premium/ln7vspq4dr1rbyf/DESEJO_DE_MENINA_AO_VIVO_EM_%25C3%2581GUA_BRANCA_-_AL_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img84.png" width="300" height="450" loading="lazy">
+<h3>MASTRUZ COM LEITE - EM GIRAU DO PONCIANO</h3>
+<a href="https://www.mediafire.com/file_premium/xk2ryn3f6w1ns4q/MASTRUZ_COM_LEITE_AO_VIVO_EM_GIRAU_DO_PONCIANO_-_AL_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img85.png" width="300" height="450" loading="lazy">
+<h3>DOMINGUINHOS - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/0lkcgs1gqdrh0rs/Iluminado_Dominguinhos_-_Show_Completo_-_Digi2_Filmes.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img86.png" width="300" height="450" loading="lazy">
+<h3>CONDE DO FORRÓ - AO VIVO EM FORTALEZA</h3>
+<a href="https://www.mediafire.com/file_premium/cgr8nw3it5hk7es/DVD_Conde_do_Forr%25C3%25B3_-_Ao_Vivo_Em_Fortaleza_-_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img87.png" width="300" height="450" loading="lazy">
+<h3>MAGNIFICOS (AO VIVO NO CLASSIC HALL)</h3>
+<a href="https://www.mediafire.com/file_premium/5uzv8avjellqusy/Magnificos_%2528Ao_Vivo_no_Classic_Hall%2529_-_DVD_Promocional_2016.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img88.png" width="300" height="450" loading="lazy">
+<h3>MANO WALTER - EM SÃO JOÃO DE CAMPINA GRANDE</h3>
+<a href="https://www.mediafire.com/file_premium/vaatww37flb0vux/MANO_WALTER_AO_VIVO_NO_S%25C3%2583O_JO%25C3%2583O_DE_CAMPINA_GRANDE_-_PB_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img89.png" width="300" height="450" loading="lazy">
+<h3>LIMÃO COM MEL - UM SHOW DE EMOÇÕES</h3>
+<a href="https://www.mediafire.com/file_premium/kwuhteet9xnlzba/DVD_UM_SHOW_DE_EMO%25C3%2587%25C3%2595ES_-_LIM%25C3%2583O_COM_MEL.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img90.png" width="300" height="450" loading="lazy">
+<h3>RAÍ SAIA RODADA - AO VIVO EM SENADOR CANEDO</h3>
+<a href="https://www.mediafire.com/file_premium/z1hptbamks0n8e2/RA%25C3%258D_SAIA_RODADA_AO_VIVO_EM_SENADOR_CANEDO_-_GO_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img91.png" width="300" height="450" loading="lazy">
+<h3>BONDE DO FORRÓ - SHOW AO VIVO (VOLUME 03)</h3>
+<a href="https://www.mediafire.com/file_premium/ao9wr6qtprwdvr0/BONDE_DO_FORR%25C3%2593_-_DVD_AO_VIVO_COMPLETO_%2528VOLUME_3%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img92.png" width="300" height="450" loading="lazy">
+<h3>MOLECA 100 VERGONHA - 26º ARRAIÁ DA FREGUESIA</h3>
+<a href="https://www.mediafire.com/file_premium/zhv6vxr70jfj56r/Moleca_100_Vergonha_-_Campo_Formoso_BA_-_26%25C2%25BA_Arrai%25C3%25A1_da_Freguesia_-_Junho_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img93.png" width="300" height="450" loading="lazy">
+<h3>FRANK AGUIAR - O CÃOZINHO DOS TECLADOS</h3>
+<a href="https://www.mediafire.com/file_premium/4vpabufi8cxsnmj/Frank_Aguiar_-_O_C%25C3%25A3ozinho_dos_Teclados_-_DVD_Completo_-_25_Anos.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img94.png" width="300" height="450" loading="lazy">
+<h3>PEPE MORENO - SHOW AO VIVO - SÃO JOÃO</h3>
+<a href="https://www.mediafire.com/file_premium/zeucpr8a2apxq9i/Pepe_Moreno_-_Maca%25C3%25BAbas_BA_-_S%25C3%25A3o_Jo%25C3%25A3o_-_Junho_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img95.png" width="300" height="450" loading="lazy">
+<h3>WESLEY SAFADÃO AO VIVO NO GAROTA VIP MANAUS</h3>
+<a href="https://www.mediafire.com/file_premium/mwq7fi6zuxa9i9r/WESLEY_SAFAD%25C3%2583O_AO_VIVO_NO_GAROTA_VIP_MANAUS_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img96.png" width="300" height="450" loading="lazy">
+<h3>BANDA CALYPSO - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/yuhsto6cvtqi58z/DVD_Banda_Calypso_Pelo_Brasil_-_Ao_Vivo_2006_%2528Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img97.png" width="300" height="450" loading="lazy">
+<h3>CAVALEIROS DO FORRÓ - SHOW AO VIVO INESQUECÍVEL</h3>
+<a href="https://www.mediafire.com/file_premium/qbsh642mb0cgbga/DVD_Cavaleiros_do_Forr%25C3%25B3_Inesquec%25C3%25ADvel_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img98.png" width="300" height="450" loading="lazy">
+<h3>SOLANGE ALMEIDA - COQUEIRO SECO/AL - SHOW AO VIVO</h3>
+<a href="https://www.mediafire.com/file_premium/ssy2z9b1mvaschn/Solange_Almeida_-_Coqueiro_Seco_AL_-_Anivers%25C3%25A1rio_de_60_Anos_-_Novembro_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+<div id="MPB" class="tabcontent">
+<h2><div class="tituloanimado">Shows de MPB</div></h2>
+
+<div class="conteudodiscos">
+
+<div class="carddiscos">
+<img src="Img-Shows/img201.png" width="300" height="450" loading="lazy">
+<h3>TIM MAIA</h3>
+<a href="https://www.mediafire.com/file_premium/caumnh75mtxm8dz/MPB-Tim_Maia_-_In_Concert_%25281989%2529-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>  
+
+<div class="carddiscos">
+<img src="Img-Shows/img99.png" width="300" height="450" loading="lazy">
+<h3>GILBERTO GIL - CONCERTO DE CORDAS & MÁQUINAS DE RITMO</h3>
+<a href="https://www.mediafire.com/file_premium/rwp79n5cfzqgc9y/Gilberto_Gil_Concerto_de_Cordas_%2526_M%25C3%25A1quinas_de_Ritmo_%2528Show_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img100.png" width="300" height="450" loading="lazy">
+<h3>CAETANO VELOSO - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/j3pbiucnh9cymmw/LIVE_do_Caetano_de_Natal_%2523LivedoCaetanodeNatal.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img100a.png" width="300" height="450" loading="lazy">
+<h3>CHICO BUARQUE - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/xcfwcjvowa67mjc/Chico_Buarque_Carioca_%2528Show_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img101.png" width="300" height="450" loading="lazy">
+<h3>JORGE BEN JOR - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/ajei8sffq794mr1/JORGE_BEN_JOR_AO_VIVO_1982_DVD_ENERGIA.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img102.png" width="300" height="450" loading="lazy">
+<h3>TOM JOBIM - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/owoeh4o6idg06go/Tom_Jobim_Ao_Vivo_Em_Montreal_%2528Show_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img103.png" width="300" height="450" loading="lazy">
+<h3>MILTON NASCIMENTO E ORQUESTRA OURO PRETO</h3>
+<a href="https://www.mediafire.com/file_premium/ug0ko1vgn0f14va/Milton_Nascimento_e_Orquestra_Ouro_Preto_-_Clube_da_Esquina.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img104.png" width="300" height="450" loading="lazy">
+<h3>ELIS REGINA - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/z6vx0mabj9etydg/ELIS_REGINA_HD_640x360_XVID_Wide_Screen.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img105.png" width="300" height="450" loading="lazy">
+<h3>JOÃO GILBERTO - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/pr3bb5ydd8gsjq7/Jo%25C3%25A3o_Gilberto_ao_Vivo_em_S%25C3%25A3o_Paulo_-_2008.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img106.png" width="300" height="450" loading="lazy">
+<h3>TOQUINHO - 50 ANOS DE CARREIRA - AO VIVO</h3>
+<a href="https://www.mediafire.com/file_premium/ggfkk22g3fu4om0/Toquinho_-_50_Anos_de_Carreira_%2528DVD_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img107.png" width="300" height="450" loading="lazy">
+<h3>VINICIUS DE MORAES - PARIGI OLYMPIA 1978</h3>
+<a href="https://www.mediafire.com/file_premium/30yl7du1qw0qwrb/Vinicius_de_Moraes_Ao_Vivo_Parigi_Olympia_1978.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img108.png" width="300" height="450" loading="lazy">
+<h3>DJAVAN - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/apmg16yrbpdzyzk/DJavan_Ao_Vivo__Aria.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img109.png" width="300" height="450" loading="lazy">
+<h3>TAIGUARA - AO VIVO NA TV BANDEIRANTES</h3>
+<a href="https://www.mediafire.com/file_premium/g9njeyxep9o8f39/Taiguara_-_TV_Bandeirantes.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img110.png" width="300" height="450" loading="lazy">
+<h3>ZÉ RAMALHO - ANIVERSARIO DE 73 ANOS</h3>
+<a href="https://www.mediafire.com/file_premium/prei55rwxmspak5/Z%25C3%25A9_Ramalho_-_Barueri_SP_-_Aniversario_de_73_Anos_-_Mar%25C3%25A7o_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img111.png" width="300" height="450" loading="lazy">
+<h3>JORGE VERCILLO - LUAR DE SOL COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/kih06n9psoafyw6/Jorge_Vercillo_-_DVD_Luar_de_Sol_Completo_%2528MPB_Ao_Vivo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<div id="Pagode" class="tabcontent">
+<h2><div class="tituloanimado">Shows de Pagode e Samba</div></h2>
+
+<div class="conteudodiscos">
+
+<div class="carddiscos">
+<img src="Img-Shows/img202.png" width="300" height="450" loading="lazy">
+<h3>Alexandre Pires - Show ao vivo completo</h3>
+<a href="https://www.mediafire.com/file_premium/bblih9j2p07bono/PAGODE_E_SAMBA-Alexandre_Pires_Mais_Al%25C3%25A9m_Ao_Vivo-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img205.png" width="300" height="450" loading="lazy">
+<h3>Jorge Aragão - Show ao vivo completo</h3>
+<a href="https://www.mediafire.com/file_premium/6k7opr8aty4iy9y/PAGODE_E_SAMBA-Jorge_Arag%25C3%25A3o_FESTIVAL_FAVELA_SOUNDS_2022-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img203.png" width="300" height="450" loading="lazy">
+<h3>Paulinho da Viola - Show ao vivo completo</h3>
+<a href="https://www.mediafire.com/file_premium/vma6abfrfssl1ac/PAGODE_E_SAMBA-Paulinho_da_Viola_-_Ac%25C3%25BAstico_MTV-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img204.png" width="300" height="450" loading="lazy">
+<h3>Raça Negra - Ao vivo em concerto</h3>
+<a href="https://www.mediafire.com/file_premium/bkx7rtdc48lyp0u/PAGODE_E_SAMBA-Ra%25C3%25A7a_negra%252Cen_concierto-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img112.png" width="300" height="450" loading="lazy">
+<h3>ZECA PAGODINHO - SHOW ACÚSTICO MTV</h3>
+<a href="https://www.mediafire.com/file_premium/6kezl8hhpflsihm/ACUSTICO_MTV_ZECA_PAGODINHO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img113.png" width="300" height="450" loading="lazy">
+<h3>BELO - CONCERTO AO VIVO EM SÃO PAULO</h3>
+<a href="https://www.mediafire.com/file_premium/jx0tmvlk4h6qh0l/Belo_in_Concert_-_Gravado_em_S%25C3%25A3o_Paulo_DVD_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img114.png" width="300" height="450" loading="lazy">
+<h3>THIAGUINHO - SAMBA PIATÃ AO VIVO</h3>
+<a href="https://www.mediafire.com/file_premium/2059ju1fp1g3rvi/THIAGUINHO_AO_VIVO_SAMBA_PIAT%25C3%2583_2022.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img115.png" width="300" height="450" loading="lazy">
+<h3>PAGODE DO MENOS É MAIS - BRAZÓLIA BAR</h3>
+<a href="https://www.mediafire.com/file_premium/w34n9mfvzin9x48/Pagode_do_MENOS_%25C3%2589_MAIS_no_Braz%25C3%25B3lia_Bar.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img116.png" width="300" height="450" loading="lazy">
+<h3>PÉRICLES - SHOW AO VIVO - SENSAÇÕES</h3>
+<a href="https://www.mediafire.com/file_premium/e30pg512d450wqn/P%25C3%25A9ricles_-_DVD_Sensa%25C3%25A7%25C3%25B5es_%2528DVD_COMPLETO%2529_UHD_4K.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img117.png" width="300" height="450" loading="lazy">
+<h3>BETH CARVALHO - PARQUE DE MADUREIRA</h3>
+<a href="https://www.mediafire.com/file_premium/svnv1t98spv52xq/Beth_Carvalho_-_Ao_Vivo_no_Parque_de_Madureira_%2528DVD_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img118.png" width="300" height="450" loading="lazy">
+<h3>SÓ PRA CONTRARIAR - SHOW DE 25 ANOS</h3>
+<a href="https://www.mediafire.com/file_premium/9ai3jxm6r1kdlw7/So_Pra_Contrariar_25_anos.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img119.png" width="300" height="450" loading="lazy">
+<h3>RAÇA NEGRA - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/oxqsv4mlilijc9g/RA%25C3%2587A_NEGRA_DVD_COMPLETO_TOP_10.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img120.png" width="300" height="450" loading="lazy">
+<h3>GRUPO PIXOTE - SHOW HOUSE MUSIC LIVE</h3>
+<a href="https://www.mediafire.com/file_premium/iggl1b4wcg7udb7/PIXOTE_HOUSE_MUSIC_-_DVD_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img121.png" width="300" height="450" loading="lazy">
+<h3>SORRISO MAROTO - SHOW É DIFERENTE</h3>
+<a href="https://www.mediafire.com/file_premium/fw6ejjkcrtyxs8q/Sorriso_Maroto_-_DVD_%25C3%2589_Diferente_%2528Show_Completo_%252B_Entrevista_%252B_Subs__PT__ENG__SPA_%252B_Playlist%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img122.png" width="300" height="450" loading="lazy">
+<h3>FERRUGEM - SHOW SAMBA DA FEIRA LIVE</h3>
+<a href="https://www.mediafire.com/file_premium/b2vaci5meczwlpu/Ferrugem_Ao_Vivo_no_Samba_da_Feira_%2528SHOW_COMPLETO%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img123.png" width="300" height="450" loading="lazy">
+<h3>DILSINHO - SHOW AO VIVO EM SALVADOR</h3>
+<a href="https://www.mediafire.com/file_premium/y8lvsjy5oklipg9/Dilsinho_aovivo_em__Salvador_ba_show_completo__HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+<div id="Pop" class="tabcontent">
+<h2><div class="tituloanimado">Shows de Pop</div></h2>
+
+<div class="conteudodiscos">
+
+<div class="carddiscos">
+<img src="Img-Shows/img206.png" width="300" height="450" loading="lazy">
+<h3>Elton John - Show ao vivo completo</h3>
+<a href="https://www.mediafire.com/file_premium/zyk4hs98zhev19n/POP-Elton_John_LIVE_-_2022-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img207.png" width="300" height="450" loading="lazy">
+<h3>Harry Styles - Show ao vivo completo</h3>
+<a href="https://www.mediafire.com/file_premium/g9myb41btdxohqz/POP-Harry_styles_live_in_concert_Los_Angeles-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img208.png" width="300" height="450" loading="lazy">
+<h3>Latino - Show ao vivo completo Live</h3>
+<a href="https://www.mediafire.com/file_premium/ouqvg20thrccpdq/POP-Latino__-_Maiores_Sucessos-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>  
+
+<div class="carddiscos">
+<img src="Img-Shows/img209.png" width="300" height="450" loading="lazy">
+<h3>Sandy & Junior - Show ao vivo completo</h3>
+<a href="https://www.mediafire.com/file_premium/7o03zllox5xb3ym/POP-Sandy_e_Junior_-_Ao_Vivo_no_Maracan%25C3%25A3-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img124.png" width="300" height="450" loading="lazy">
+<h3>BEE GEES - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/6uz2u3lif5jh5u3/Bee_Gees_-_One_Night_Only_1997_%2528Show_Completo%2529_720p_%2528HD%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img125.png" width="300" height="450" loading="lazy">
+<h3>JUSTIN BIEBER - CAPITAL JINGLE BELL BALL</h3>
+<a href="https://www.mediafire.com/file_premium/v1ujlgb529exkpm/Justin_Bieber_Capital_Jingle_Bell_Ball_UK_%2528Live%2529_2021_-_Full_Concert.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img126.png" width="300" height="450" loading="lazy">
+<h3>DUA LIPA - ONEPLUS MUSIC FESTIVAL</h3>
+<a href="https://www.mediafire.com/file_premium/mqtc5z9xr8iz23s/Dua_Lipa_-_OnePlus_Music_Festival_2019_%2528Bass_Boosted%2529_%255BFull_Concert%255D.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img127.png" width="300" height="450" loading="lazy">
+<h3>THE WEEKND - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/r790w45zm1xjbkx/The_Weeknd_-_Coachella_2022_%2528Full_Set%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img128.png" width="300" height="450" loading="lazy">
+<h3>ADELE - SHOW NO ITUNES FESTIVAL LIVE</h3>
+<a href="https://www.mediafire.com/file_premium/8z9hzz292ykhs52/ADELE_AO_VIVO_SHOW_COMPLETO_ITUNES_FESTIVAL_LIVE.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img129.png" width="300" height="450" loading="lazy">
+<h3>TAYLOR SWIFT - AMAZON PRIME DAY</h3>
+<a href="https://www.mediafire.com/file_premium/lfv9o1rrz5iyfnc/Taylor_Swift_Live_At_Amazon_Prime_Day_2019.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img130.png" width="300" height="450" loading="lazy">
+<h3>LADY GAGA - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/27lv5jzyj2t4b5f/Lady_Gaga_Live_Coachella_Full.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img131.png" width="300" height="450" loading="lazy">
+<h3>BRUNO MARS - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/jcytyva5trcdwq7/Bruno_Mars_LIVE_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img132.png" width="300" height="450" loading="lazy">
+<h3>ED SHEERAN - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/vneq3sdxqua7ve2/Ed_Sheeran_Live_FULL_SHOW_Magic_Radio.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img133.png" width="300" height="450" loading="lazy">
+<h3>MAROON 05 - SHOW NO ROCK IN RIO</h3>
+<a href="https://www.mediafire.com/file_premium/ed491ikx7vh42zg/MAROON_5_ROCK_IN_RIO_2017_COMPLETO_FULL_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img134.png" width="300" height="450" loading="lazy">
+<h3>BEYONCÉ - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/209ef1kzfsxgswl/Beyonc%25C3%25A9_-_Beyonc%25C3%25A9_Experience_Live_%25284K_Blu-Ray_Upscale%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img135.png" width="300" height="450" loading="lazy">
+<h3>ONE DIRECTION - LIVE NO SAN SIRO STADIUM</h3>
+<a href="https://www.mediafire.com/file_premium/rfeve1fdk54n0jc/One_Direction-_Where_we_are_live_from_San_Siro_stadium_And_The_Road_To.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img136.png" width="300" height="450" loading="lazy">
+<h3>KATY PERRY - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/srbuzlzzphn1put/Katy_Perry_-_OnePlus_Music_Festival_2019_Full_Concert_%2528Full_HD%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img137.png" width="300" height="450" loading="lazy">
+<h3>DEMI LOVATO - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/0sizdtsc21qjx5s/Demi_Lovato_-__Full_Concert_Show_Completo_%2528Live_from_Rock_in_Rio_Lisboa_2018%2529_1080p_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img138.png" width="300" height="450" loading="lazy">
+<h3>SHAKIRA - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/merjty1mlpyqgib/Shakira_Live_From_Paris.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img139.png" width="300" height="450" loading="lazy">
+<h3>BACKSTREET BOYS - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/x6llah3nv4azal6/BACKSTREET_BOYS_-_FULL_CONCERT_-_VI%25C3%2591A_DEL_MAR%252C_CHILE_2019_%2528OFFICIAL_VIDEO%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img140.png" width="300" height="450" loading="lazy">
+<h3>MADONNA - THE CONFESSIONS TOUR LIVE</h3>
+<a href="https://www.mediafire.com/file_premium/izq4oq24fe1ac1q/Madonna_-_The_Confessions_Tour_%2528Live_from_London%252C_England_2006%2529_DVD_Full_Show_%255BRemastered_HD%255D.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img141.png" width="300" height="450" loading="lazy">
+<h3>BRITNEY SPEARS - OOPS! @ NEW ORLEANS</h3>
+<a href="https://www.mediafire.com/file_premium/toqdfg6r50q1r6q/Britney_Spears_-_Oops%2521..._I_Did_It_Again_Tour_%2540_New_Orleans_%255BE4_Digital_AI%255D.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img142.png" width="300" height="450" loading="lazy">
+<h3>CELINE DION - A NEW DAY - LIVE IN LAS VEGAS</h3>
+<a href="https://www.mediafire.com/file_premium/r0n3qzaevdrxx5m/Celine_Dion_-_A_New_Day_%25282007%2529_DVD__Live_In_Las_Vegas_Full_Concert_CDST_L.U.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img143.png" width="300" height="450" loading="lazy">
+<h3>JUSTIN TIMBERLAKE - SHOW NO ROCK IN RIO</h3>
+<a href="https://www.mediafire.com/file_premium/5dkghgy6nk03zyh/Justin_Timberlake_-_Rock_in_Rio_2013_%2528HD%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img144.png" width="300" height="450" loading="lazy">
+<h3>KLB - COM SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/oze82i4rz2sfvtm/DVD_KLB_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img145.png" width="300" height="450" loading="lazy">
+<h3>LAURA PAUSINI - SHOW NO CIRCO MASSIMO</h3>
+<a href="https://www.mediafire.com/file_premium/uzg8g0rwvxzp94y/Laura_Pausini_-_Circo_Massimo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img146.png" width="300" height="450" loading="lazy">
+<h3>ROUPA NOVA - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/j9fb0g05jfwd1yj/Roupa_Nova_30_Anos_Ao_Vivo_I_DVD_%2523roupanova_%2523aovivo_%2523brasil_%2523multishow.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<div id="Rock" class="tabcontent">
+<h2><div class="tituloanimado">Shows de Rock</div></h2>
+
+<div class="conteudodiscos">
+
+<div class="carddiscos">
+<img src="Img-Shows/img210.png" width="300" height="450" loading="lazy">
+<h3>CPM22 - AO VIVO NO ROCK IN RIO LIVE</h3>
+<a href="https://www.mediafire.com/file_premium/7io6olkrs078dl6/ROCK-CPM_22_no_Rock_in_Rio-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img211.png" width="300" height="450" loading="lazy">
+<h3>ELVIS PRESLEY - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/9jr2ng0bt67e268/ROCK-Elvis_Presley_-_%25281968%2529-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img212.png" width="300" height="450" loading="lazy">
+<h3>SKANK - SHOW AO VIVO COMPLETO LIVE</h3>
+<a href="https://www.mediafire.com/file_premium/24f0qkw5re2w6nc/ROCK-Skank-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img147.png" width="300" height="450" loading="lazy">
+<h3>QUEEN - HUNGARIAN RHAPSODY - LIVE IN BUDAPEST</h3>
+<a href="https://www.mediafire.com/file_premium/erm1b6447p7gvh5/Queen_-_Hungarian_Rhapsody_Live_In_Budapest_1986_%255BFull_Concert_1080p48%255D.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img148.png" width="300" height="450" loading="lazy">
+<h3>PEARL JAM - MADISON SQUARE GARDEN</h3>
+<a href="https://www.mediafire.com/file_premium/yn9wn1frnxftnuf/Pearl_Jam_05-02-2016_New_York_City%252C_Madison_Square_Garden_Full_Show_Multicam_SBD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img149.png" width="300" height="450" loading="lazy">
+<h3>THE BEATLES - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/13v4k3vgfhro021/The_Beatles_-_Live_At_Nippon_Budokan_Hall%252C_Japan_%25281966%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img150.png" width="300" height="450" loading="lazy">
+<h3>GUNS N' ROSES - USE YOUR ILLUSION - LIVE IN TOKYO</h3>
+<a href="https://www.mediafire.com/file_premium/km4csuuf43318if/Guns_N%2527_Roses_-_Use_Your_Illusion_-_Live_In_Tokyo_full_concert_%2528HD_Remastered%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img151.png" width="300" height="450" loading="lazy">
+<h3>PINK FLOYD - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/8fslmp2ih9kuroe/Pink_Floyd_-_PULSE_%2528Restored_Re-Edited_90_Minute_Version%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img152.png" width="300" height="450" loading="lazy">
+<h3>NIRVANA - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/9hiz0t4w8u7pd21/Nirvana_-_MTV_Live_And_Loud_1993_%2528Full_Concert%2529_%255B60_fps%255D_%255BHD%255D.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img153.png" width="300" height="450" loading="lazy">
+<h3>LED ZEPPELIN - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/8w7iub5ejtxb621/Led_Zeppelin_DVD_II.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img154.png" width="300" height="450" loading="lazy">
+<h3>AC/DC - SUPER SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/a23zudamm33pp4s/AC_DC_-_FULL_CONCERT_%2528_Rock_Or_Bust_-Worldtour%2529_-_Berlin_2015_-_Multicam-Mix.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img155.png" width="300" height="450" loading="lazy">
+<h3>METALLICA - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/fs3bsdi5mcyf0hi/Metallica__Full_Concert_-__Live_from_Nimes%252C_France_2009_HD%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img156.png" width="300" height="450" loading="lazy">
+<h3>RED HOT CHILI PEPPERS - LIVE AT SLANE CASTLE</h3>
+<a href="https://www.mediafire.com/file_premium/4xzyxhfr1m4bppu/Red_Hot_Chili_Peppers_-_Live_at_Slane_Castle_2003_Full_Concert_%2528High_Quality%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img157.png" width="300" height="450" loading="lazy">
+<h3>IRON MAIDEN - LIVE @ ROCK AM RING</h3>
+<a href="https://www.mediafire.com/file_premium/m38t4fk0o0qujkg/Iron_Maiden_-_Live_%2540_Rock_am_Ring_2014_%2528Full_Show%252C_Pro_Shot%2529_%255BHD%255D.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img158.png" width="300" height="450" loading="lazy">
+<h3>BON JOVI - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/illr87ixdrm25s0/Bon_Jovi_The_Crush_Tour_Full_Concert.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img159.png" width="300" height="450" loading="lazy">
+<h3>THE ROLLING STONES- SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/bsq5ooim8n52d8c/The_Rolling_Stones_-_Austin%252C_TX_-_10-22-2006_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img160.png" width="300" height="450" loading="lazy">
+<h3>BLACK SABBATH - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/7wbvqw33z2g7omk/BLACK_SABBATH_-_Live_in_Paris_%25281970%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img161.png" width="300" height="450" loading="lazy">
+<h3>KISS - SHOW ONE AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/7go7ohbmznw0tww/Kiss_Live_In_Zurich_Full_Concert_2013.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img162.png" width="300" height="450" loading="lazy">
+<h3>SCORPIONS - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/w2aniazwodwc66d/Scorpions_Acoustica_Live_in_Lisboa_2001.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img164.png" width="300" height="450" loading="lazy">
+<h3>U2 - SUPER SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/mpt9o455o2zdhgi/U2_-_Vertigo_world_tour_-_Live_from_Chicago_2005_full.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img165.png" width="300" height="450" loading="lazy">
+<h3>RAMONES - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/cq9krqp5yakogh9/Ramones_-_Buenos_Aires%252C_Argentina_16_03_1996_%2528FULL_SHOW_COMPLETO%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img166.png" width="300" height="450" loading="lazy">
+<h3>THE DOORS - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/pd08sfcew08mxs2/The_Doors_Live_At_The_Hollywood_Bowl%252C_July_5%252C_1968_Full_Concert.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img167.png" width="300" height="450" loading="lazy">
+<h3>VAN HALEN - RIGHT HERE RIGHT NOW CONCERT</h3>
+<a href="https://www.mediafire.com/file_premium/5sfn4prpegyorgn/Van_Halen_-_Right_Here_Right_Now_Concert_%2528HD%2529_-_The_%2528remastered%2529_audio_file_link_is_in_description.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img168.png" width="300" height="450" loading="lazy">
+<h3>GREEN DAY - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/xo9lgr7yqurx3d7/Green_Day_-_Lollapalooza_2022_-_Full_Show_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img169.png" width="300" height="450" loading="lazy">
+<h3>SEPULTURA - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/7xrpee4d5yzsja3/EXIT_2022_Sepultura_Live_%2540_Main_Stage_FULL_SHOW_%2528HQ_version%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img170.png" width="300" height="450" loading="lazy">
+<h3>EAGLES - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/0ew1kkyi1wy4g42/Eagles_-_Hell_Freezes_Over_%25281994%2529_%2528DVD%2529_%2528HQ%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img171.png" width="300" height="450" loading="lazy">
+<h3>ANGRA - DVD "ØMNI" - COM SANDY E FAMÍLIA LIMA</h3>
+<a href="https://www.mediafire.com/file_premium/flqtkwuil19vb4t/Angra_-_DVD__%25C3%2598mni__com_Sandy_e_Fam%25C3%25ADlia_Lima__Full_Concert.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img172.png" width="300" height="450" loading="lazy">
+<h3>THE CRANBERRIES - BENEATH THE SKIN</h3>
+<a href="https://www.mediafire.com/file_premium/ufewu89sfbo18mn/The_Cranberries_-_Beneath_the_Skin_%2528_Live_in_Paris_1999_%2529_Full_Concert_169_HQ.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img173.png" width="300" height="450" loading="lazy">
+<h3>LEGIÃO URBANA - SHOW ACÚSTICO MTV</h3>
+<a href="https://www.mediafire.com/file_premium/q3kid2k50llsa81/ROCK-Legia%25CC%2583o_Urbana_-_Acu%25CC%2581stico_MTV-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img174.png" width="300" height="450" loading="lazy">
+<h3>RAIMUNDOS - FESTIVAL DO JOÃO ROCK</h3>
+<a href="https://www.mediafire.com/file_premium/gnldjl2zcwn66z7/Raimundos_-_Jo%25C3%25A3o_Rock_2019_%2528Show_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img175.png" width="300" height="450" loading="lazy">
+<h3>RPM - SHOW MTV AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/40y038lrwzw8vqu/RPM_-_Ao_Vivo_MTV_2002_%2528DVD_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img176.png" width="300" height="450" loading="lazy">
+<h3>CAPITAL INICIAL - SHOW AO VIVO COMPLETO</h3>
+<a href="https://www.mediafire.com/file_premium/0ny2dp2e5plv09q/Capital_Inicial_-_Jo%25C3%25A3o_Rock_2019_%2528Show_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img177.png" width="300" height="450" loading="lazy">
+<h3>CHARLIE BROWN JR - MÚSICA POPULAR CAIÇARA</h3>
+<a href="https://www.mediafire.com/file_premium/ln9qul6w5avljh5/Charlie_Brown_Jr_-_M%25C3%25BAsica_Popular_Cai%25C3%25A7ara_%2528DVD_Oficial%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+</div> <!-- Aqui se encerra o Desktop -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mobile">
+
+<div class="logotipomobile"><img src="Img-Shows/logotipo.png" width="130" height="50"></div>
+
+<div class="topomobile">
+<h2>bem-vindo ao painel com Shows completos 2.0</h2>
+<h3>Os maiores Sucessos do Brasil e do Mundo. Tudo a um clique de distância.</h3>
+<div class="ctatopo"><a href="#comeco"><button>Ver todos</button></a></div>
+</div>
+
+<div class="faixaneon"><p>Passe para o lado,<br> escolha um show e <br>Clique no botão <span style="font-style: italic; font-weight: 900; text-shadow: 1px 1px #000;">Baixar agora.</span></p></div>
+
+
+
+
+<div class="generoshow" id="comeco">
+<h2>ELETRÔNICAS</h2>
+
+<div class="conteudodiscos">
+<div class="carddiscos">
+<img src="Img-Shows/img190.png" width="150" height="220" loading="lazy">
+<h3>DAFT PUNK</h3>
+<a href="https://www.mediafire.com/file_premium/6qa5odiusawksc8/ELETR%25C3%2594NICA-Daft_Punk_-_ALIVE_2021__EPILOGUE-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img189.png" width="150" height="220" loading="lazy">
+<h3>DAVID GUETTA</h3>
+<a href="https://www.mediafire.com/file_premium/7s5rlihjwja0v0w/ELETR%25C3%2594NICA-David_Guetta%2527s_Live_DJ_Set_From_UNTOLD_Festival_2023.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img191.png" width="150" height="220" loading="lazy">
+<h3>DEPECHE MODE</h3>
+<a href="https://www.mediafire.com/file_premium/8gnkq38g48yum75/ELETR%25C3%2594NICA-Depeche_Mode_live_Barcelona_Primavera_Sound_2023-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img192.png" width="150" height="220" loading="lazy">
+<h3>GIGI D´AGOSTINO</h3>
+<a href="https://www.mediafire.com/file_premium/ec3p8kmxe64nc7d/ELETR%25C3%2594NICA-Gigi_D%2527_Agostino_-_L%2527amour_Toujours_DJ_Set_%2528Mi_Velenc%25C3%25A9nk_Fesztiv%25C3%25A1l_2017%2529-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img193.png" width="150" height="220" loading="lazy">
+<h3>LASGO</h3>
+<a href="https://www.mediafire.com/file_premium/i40m2vqnpokhirp/ELETR%25C3%2594NICA-Lasgo_vs_Ian_Van_Dahl_-_Planet_Pop_Festival_3-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img194.png" width="150" height="220" loading="lazy">
+<h3>Swedish House Mafia</h3>
+<a href="https://www.mediafire.com/file_premium/xdx6fkjuckcnn9g/ELETR%25C3%2594NICA-Swedish_House_Mafia_Big_Slap_Malm%25C3%25B6_2023-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img01.png" width="150" height="220" loading="lazy">
+<h3>ALOK</h3>
+<a href="https://www.mediafire.com/file_premium/c7mk2gjtkic24he/ALOK_presents_ALIVE_%2528Livestream_Show%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img02.png" width="150" height="220" loading="lazy">
+<h3>AFROJACK</h3>
+<a href="https://www.mediafire.com/file_premium/0k6xmp1xx8r768l/Afrojack_Live_%2540_Tomorrowland_2022.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img03.png" width="150" height="220" loading="lazy">
+<h3>DMITRI VEGAS & LIKE MIKE</h3>
+<a href="https://www.mediafire.com/file_premium/s963qs3y5mb4b0o/Dimitri_Vegas_%2526_Like_Mike_Live_At_Tomorrowland_2022_Mainstage_%2528FULL_SET_HD%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img04.png" width="150" height="220" loading="lazy">
+<h3>DAVID GUETTA</h3>
+<a href="https://www.mediafire.com/file_premium/al2vnso1kg4zxrd/David_Guetta_LIVE_%2540_Creamfields_North_2022.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img05.png" width="150" height="220" loading="lazy">
+<h3>MARTIN GARRIX</h3>
+<a href="https://www.mediafire.com/file_premium/l1sl87yof5u6zd2/MARTIN_GARRIX_LIVE_%2540_TOMORROWLAND_2022.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img06.png" width="150" height="220" loading="lazy">
+<h3>NICKY ROMERO</h3>
+<a href="https://www.mediafire.com/file_premium/yvybn8t4ni0rgdr/Nicky_Romero_LIVE_at_Tomorrowland_2022_-_Mainstage.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img07.png" width="150" height="220" loading="lazy">
+<h3>HARDWELL</h3>
+<a href="https://www.mediafire.com/file_premium/i0yqgvpfsqaebl5/Hardwell_Live_at_Tomorrowland_2022_%255BFULL_SET%255D.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img08.png" width="150" height="220" loading="lazy">
+<h3>VINTAGE CULTURE</h3>
+<a href="https://www.mediafire.com/file_premium/hw6hgnavf73j5ik/Vintage_Culture_Tomorrowland_2022_-_WE2.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img09.png" width="150" height="220" loading="lazy">
+<h3>MARSHMELLO</h3>
+<a href="https://www.mediafire.com/file_premium/fzq6iqt6398u1ie/Marshmello_Live_%2540_Expo_Dubai_2022_FULL_SET_LIVE.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img10.png" width="150" height="220" loading="lazy">
+<h3>CALVIN HARRIS</h3>
+<a href="https://www.mediafire.com/file_premium/pmxj1jsbfd22ffx/Calvin_Harris_Full_Set_Live_at_Capital%25E2%2580%2599s_Summertime_Ball_2019.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img11.png" width="150" height="220" loading="lazy">
+<h3>AVICII</h3>
+<a href="https://www.mediafire.com/file_premium/4a5fwuq9zdrusin/Avicii_Live_Tomorrowland_Belgium_2015_%2528Full_Set%2529_%2528HD%2529_%2528Avicii_Live%2529_%2528Avicii_Tribute%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img12.png" width="150" height="220" loading="lazy">
+<h3>DJ ROSS VS DOUBLE YOU</h3>
+<a href="https://www.mediafire.com/file_premium/2u1x9rnqhgt86iy/DJ_Ross_vs._Double_You_-_Planet_Pop_Festival_3_%2528Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="generoshow">
+<h2>SERTANEJO</h2>
+
+<div class="conteudodiscos">
+<div class="carddiscos">
+<img src="Img-Shows/img14.png" width="150" height="220" loading="lazy">
+<h3>PAULA FERNANDES</h3>
+<a href="#" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img214.png" width="150" height="220" loading="lazy">
+<h3>BRUNO E MARRONE</h3>
+<a href="https://www.mediafire.com/file_premium/agvcnjfmc8h6xr6/SERTANEJO-Bruno_%2526_Marrone_-_Revivem_Sua_Hist%25C3%25B3ria_%2528Ao_vivo_em_Belo_Horizonte%2529-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img13.png" width="150" height="220" loading="lazy">
+<h3>ZEZÉ DI CAMARGO & LUCIANO</h3>
+<a href="https://www.mediafire.com/file_premium/3hsgu17a05j09x9/zeze_di_camargo_e_luciano_Flores_em_vida_DVD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img215.png" width="150" height="220" loading="lazy">
+<h3>GUSTTAVO LIMA</h3>
+<a href="https://www.mediafire.com/file_premium/d4lhha7otsfjbir/SERTANEJO-Gusttavo_Lima_-_Festival_de_Alegre_2023-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img217.png" width="150" height="220" loading="lazy">
+<h3>ZÉ NETO E CRISTIANO</h3>
+<a href="https://www.mediafire.com/file_premium/7fsbjny55ezpx3b/SERTANEJO-Z%25C3%25A9_Neto_e_Cristiano_-_Caldas_Country_2019-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img15.png" width="150" height="220" loading="lazy">
+<h3>MARÍLIA MENDONÇA</h3>
+<a href="https://www.mediafire.com/file_premium/7cqup81w4zso8ph/MAR%25C3%258DLIA_MENDON%25C3%2587A_-_DVD_COMPLETO_TOP_10.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img16.png" width="150" height="220" loading="lazy">
+<h3>HENRIQUE E JULIANO</h3>
+<a href="https://www.mediafire.com/file_premium/929wgmnbx6ewrk9/Henrique_e_Juliano_-_Ao_Vivo_Em_Parauapebas_2020_%2528SHOW_COMPLETO%2529_%255BDVD_LIVE%255D.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img216.png" width="150" height="220" loading="lazy">
+<h3>SIMONE MENDES</h3>
+<a href="https://www.mediafire.com/file_premium/2o9c9frvzj84zk1/SERTANEJO-Simone_Mendes_Ao_Vivo_em_Campina_Grande-PB_-_O_Maior_S%25C3%25A3o_Jo%25C3%25A3o_do_Mundo_2023-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img17.png" width="150" height="220" loading="lazy">
+<h3>GUSTTAVO LIMA</h3>
+<a href="https://www.mediafire.com/file_premium/jbttcyw5mdojbrf/Gusttavo_Lima_-_Caldas_Country_2019_%2528SHOW_COMPLETO%2529_-_DVD_O_EMBAIXADOR_BUTECO_Live.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img18.png" width="150" height="220" loading="lazy">
+<h3>MAIARA E MARAISA</h3>
+<a href="https://www.mediafire.com/file_premium/6wfkbg5wmfbi2vy/Maiara_e_Maraisa_-_Senador_Canedo_GO_-_Canedo_Fest_Show_-_Junho_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img213.png" width="150" height="220" loading="lazy">
+<h3>ANA CASTELA</h3>
+<a href="https://www.mediafire.com/file_premium/645cjrzmkxdn3p2/SERTANEJO-Ana_Castela_-_Festival_de_Alegre_2023-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img19.png" width="150" height="220" loading="lazy">
+<h3>BRUNO E MARRONE</h3>
+<a href="https://www.mediafire.com/file_premium/vh38kndq71cmy1u/Bruno_e_Marrone_-_Dvd_Completo_2018.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img20.png" width="150" height="220" loading="lazy">
+<h3>SIMONE E SIMARIA</h3>
+<a href="https://www.mediafire.com/file_premium/79hlub63crr49bc/Simone_e_Simaria_-_Caldas_Country_2019_%2528SHOW_COMPLETO%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img21.png" width="150" height="220" loading="lazy">
+<h3>JORGE E MATHEUS</h3>
+<a href="https://www.mediafire.com/file_premium/qle7pn86rwxu68u/JORGE_E_MATEUS_Show_Completo_em_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img22.png" width="150" height="220" loading="lazy">
+<h3>GUSTAVO MIOTO</h3>
+<a href="https://www.mediafire.com/file_premium/hdfgqt9ce3oc3ao/Gustavo_Mioto_Sem_Cortes_-_Ao_Vivo_Em_Jaguari%25C3%25BAna_1_10_-_Ano_X.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img23.png" width="150" height="220" loading="lazy">
+<h3>CHITÃOZINHO E XORORÓ</h3>
+<a href="https://www.mediafire.com/file_premium/648m94dvxffvoqv/DVD_Chit%25C3%25A3ozinho_e_Xoror%25C3%25B3_-_Grandes_Cl%25C3%25A1ssicos_Ac%25C3%25BAsticos.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img24.png" width="150" height="220" loading="lazy">
+<h3>DANIEL</h3>
+<a href="https://www.mediafire.com/file_premium/k5vdx40svhmtj7w/Daniel_Ao_Vivo_20_Anos_De_Carreira_2003_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img25.png" width="150" height="220" loading="lazy">
+<h3>CÉSAR MENOTTI E FABIANO</h3>
+<a href="https://www.mediafire.com/file_premium/1df5r9hmjpweo99/C%25C3%25A9sar_Menotti_e_Fabiano_Mem%25C3%25B3rias_Anos_80_e_90_Ao_Vivo_2015_DVD_RIP_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img26.png" width="150" height="220" loading="lazy">
+<h3>CRISTIANO ARAUJO</h3>
+<a href="https://www.mediafire.com/file_premium/9l29c368x9wwdns/Cristiano_araujo_DVD_completo_em_Cuiab%25C3%25A1.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img27.png" width="150" height="220" loading="lazy">
+<h3>MILIONÁRIO E JOSÉ RICO</h3>
+<a href="https://www.mediafire.com/file_premium/l80pfb8k9qwg1u8/Dvd_Milionario_e_Jose_Rico_Atravessando_Gera%25C3%25A7%25C3%25B5es.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img28.png" width="150" height="220" loading="lazy">
+<h3>LUAN SANTANA</h3>
+<a href="https://www.mediafire.com/file_premium/sc00xxuau3yn6m1/Luan_Santana__-_S%25C3%25A3o_Paulo_SP_-_Espa%25C3%25A7o_das_Am%25C3%25A9ricas_-_Dezembro_2021_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img29.png" width="150" height="220" loading="lazy">
+<h3>MATHEUS & KAUA</h3>
+<a href="https://www.mediafire.com/file_premium/25yyn8jcf9ckh59/Matheus_%2526_Kauan_-_Alpercata_MG_-_35%25C2%25BA_Festival_do_Quiabo_-_Maio_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img30.png" width="150" height="220" loading="lazy">
+<h3>GIAN & GIOVANI</h3>
+<a href="https://www.mediafire.com/file_premium/ncsnvi78254mxll/Gian_%2526_Giovani_-_Uma_Hist%25C3%25B3ria_De_Sucesso_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img31.png" width="150" height="220" loading="lazy">
+<h3>LEONARDO</h3>
+<a href="https://www.mediafire.com/file_premium/b3cgth1msn9g1dl/LEONARDO_AO_VIVO_NO_GAROTA_VIP_FORTALEZA_-_MAIO_2022_-_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img32.png" width="150" height="220" loading="lazy">
+<h3>EDUARDO COSTA</h3>
+<a href="https://www.mediafire.com/file_premium/fiyyhgly396w52u/Live_Eduardo_Costa_50_Tons_S%25C3%25B3_Mod%25C3%25A3o_Apaixonado.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img33.png" width="150" height="220" loading="lazy">
+<h3>HUGO E GUILHERME</h3>
+<a href="https://www.mediafire.com/file_premium/0gr089qealq9onk/Show_completo_de_Hugo_e_Guilherme_em_Cana%25C3%25A3_dos_Caraj%25C3%25A1s-PA.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img34.png" width="150" height="220" loading="lazy">
+<h3>GUILHERME & SANTIAGO</h3>
+<a href="https://www.mediafire.com/file_premium/l3qhf8u1vgyl7g0/Guilherme_%2526_Santiago_-_20_Anos_%255BDVD_Completo%255D.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img35.png" width="150" height="220" loading="lazy">
+<h3>JOÃO BOSCO & VINÍCIUS</h3>
+<a href="https://www.mediafire.com/file_premium/ns65zw9m63hpmrn/Jo%25C3%25A3o_Bosco_%2526_Vin%25C3%25ADcius_-_C%25C3%25A9u_de_S%25C3%25A3o_Paulo_%2528DVD_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img36.png" width="150" height="220" loading="lazy">
+<h3>JOÃO NETO E FREDERICO</h3>
+<a href="https://www.mediafire.com/file_premium/ds0miad49ta3ae0/Jo%25C3%25A3o_Neto_e_Frederico_s%25C3%25B3_as_melhores_dvd_completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img37.png" width="150" height="220" loading="lazy">
+<h3>VICTOR E LÉO</h3>
+<a href="https://www.mediafire.com/file_premium/a6vlwwiwpyqdwhy/Victor_e_L%25C3%25A9o_DVD_IRM%25C3%2583OS.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img38.png" width="150" height="220" loading="lazy">
+<h3>EDSON & HUDSON</h3>
+<a href="https://www.mediafire.com/file_premium/7m06izhbhyu7zhd/Edson_%2526_Hudson_-_DVD_Amor_%252B_Boteco_2019.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img39.png" width="150" height="220" loading="lazy">
+<h3>NAIARA AZEVEDO</h3>
+<a href="https://www.mediafire.com/file_premium/rqs9nrnyo81kltu/Naiara_Azevedo_na_Festa_de_Sant%2527Ana_de_Caic%25C3%25B3.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img40.png" width="150" height="220" loading="lazy">
+<h3>ISRAEL E RODOLFFO</h3>
+<a href="https://www.mediafire.com/file_premium/x1cwuyxssgvfjhq/Israel_e_Rodolffo_-_Senador_Canedo_GO_-_Canedo_Fest_Show_-_Junho_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img41.png" width="150" height="220" loading="lazy">
+<h3>FERNANDO E SOROCABA</h3>
+<a href="https://www.mediafire.com/file_premium/coz7e8cfwqsi61y/FERNANDO_E_SOROCABA_AC%25C3%259ASTICO_NA_%25C3%2593PERA_DE_ARAME_DVD_2012_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img42.png" width="150" height="220" loading="lazy">
+<h3>THAEME E THIAGO</h3>
+<a href="https://www.mediafire.com/file_premium/wznmvu6jjfh4v1k/Thaeme_e_Thiago_-_Palma_MG_-_Expo_Palma_-_Julho_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img43.png" width="150" height="220" loading="lazy">
+<h3>DIEGO E VICTOR HUGO</h3>
+<a href="https://www.mediafire.com/file_premium/j4h4cnpvlqijien/Diego_e_Victor_Hugo_ao_vivo_-_Festival_Luan_city_em_Goi%25C3%25A2nia.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img44.png" width="150" height="220" loading="lazy">
+<h3>RICK E RENNER</h3>
+<a href="https://www.mediafire.com/file_premium/eajznxb8ipuq5zy/DVD_10_ANOS_AC%25C3%259ASTICO_Rick_e_Renner.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img45.png" width="150" height="220" loading="lazy">
+<h3>WESLEY SAFADÃO</h3>
+<a href="https://www.mediafire.com/file_premium/8ltlqv1mbme49q3/Wesley_Safad%25C3%25A3o_-_Rio_de_Janeiro_%2528DVD_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img46.png" width="150" height="220" loading="lazy">
+<h3>MURILO HUFF</h3>
+<a href="https://www.mediafire.com/file_premium/magfednn77gk06i/MURILO_HUFF_AO_VIVO_EM_BRAS%25C3%258DLIA_-_DF_EXPOABRA_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img13.png" width="150" height="220" loading="lazy">
+<h3>ZEZÉ DI CAMARGO & LUCIANO</h3>
+<a href="https://www.mediafire.com/file_premium/3hsgu17a05j09x9/zeze_di_camargo_e_luciano_Flores_em_vida_DVD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img14a.png" width="150" height="220" loading="lazy">
+<h3>PAULA FERNANDES</h3>
+<a href="https://www.mediafire.com/file_premium/2jy9zt9jiqmp7rl/SERTANEJO-Paula_Fernandes_-_DVD_Origen_%2528Ao_Vivo_em_Sete_Lagoas%2529-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="generoshow">
+<h2>AXÉ</h2>
+
+<div class="conteudodiscos">
+<div class="carddiscos">
+<img src="Img-Shows/img178.png" width="150" height="220" loading="lazy">
+<h3>CLAUDIA LEITTE</h3>
+<a href="https://www.mediafire.com/file_premium/uuyegisswdaa3pg/AX%25C3%2589-Claudia_Leitte_-__Ao_Vivo-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img179.png" width="150" height="220" loading="lazy">
+<h3>NETINHO</h3>
+<a href="https://www.mediafire.com/file_premium/xrxe4la2ib0p3c0/AX%25C3%2589-Netinho_-_Lisboa%252C_Portugal_1998-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>  
+
+<div class="carddiscos">
+<img src="Img-Shows/img180.png" width="150" height="220" loading="lazy">
+<h3>BANDA EVA</h3>
+<a href="https://www.mediafire.com/file_premium/t4ul8cig2pz86lm/AX%25C3%2589-Banda_Eva_Em_Noronha_-_2022-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img47a.png" width="150" height="220" loading="lazy">
+<h3>IVETE SANGALO</h3>
+<a href="https://www.mediafire.com/file_premium/c6llfz70rhjxpwd/IVETE_SANGALO__-_VIRADA_SALVADOR__-_completo_-_2023.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img47.png" width="150" height="220" loading="lazy">
+<h3>CHICLETE COM BANANA</h3>
+<a href="https://www.mediafire.com/file_premium/tm18u3t8oybi05e/DvD_-_Chiclete_Com_Banana_-_S%25C3%25A3o_Pedro_de_Ibirapitanga_-_Ba_-_2022.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img48.png" width="150" height="220" loading="lazy">
+<h3>É O TCHAN</h3>
+<a href="https://www.mediafire.com/file_premium/h769dibdc6rl9b6/dvd_e_o_tchan_ao_vivo_10_anos.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img49.png" width="150" height="220" loading="lazy">
+<h3>DANIELA MERCURY</h3>
+<a href="https://www.mediafire.com/file_premium/hvr4du0dx6huir7/Daniela_Mercury_ao_vivo_no_Festival_da_Virada_Salvador_2022_2023_-_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img50.png" width="150" height="220" loading="lazy">
+<h3>BABADO NOVO</h3>
+<a href="https://www.mediafire.com/file_premium/opspaliatedswlj/Babado_Novo_Uau%2521_Ao_Vivo_em_Salvador_%2528DVD_Completo_HD%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img51.png" width="150" height="220" loading="lazy">
+<h3>LÉO SANTANA</h3>
+<a href="https://www.mediafire.com/file_premium/3sm9j5ctd9bmufs/L%25C3%2589O_SANTANA_AO_VIVO_NO_GAROTA_VIP_S%25C3%2583O_PAULO_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<div class="generoshow">
+<h2>BLACK MUSIC</h2>
+
+<div class="conteudodiscos">
+<div class="carddiscos">
+<img src="Img-Shows/img182.png" width="150" height="220" loading="lazy">
+<h3>B.B. KING</h3>
+<a href="https://www.mediafire.com/file_premium/mana1m4cc6ytfsz/BLACK_M%25C3%259ASIC-BB_King_Live_2008_1080p-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img183.png" width="150" height="220" loading="lazy">
+<h3>BOB MARLEY</h3>
+<a href="https://www.mediafire.com/file_premium/u57l38mz1rh4tgn/BLACK_MUSIC-Bob_Marley_%2526_The_Wailers_-_live_Rainbow_Theatre%252C_London_1977-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img181.png" width="150" height="220" loading="lazy">
+<h3>MICHAEL JACKSON</h3>
+<a href="https://www.mediafire.com/file_premium/0ejv6pa51w7u53a/BLACK_MUSIC-Michael_Jackson_-_Live_in_Munich_1997-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img52.png" width="150" height="220" loading="lazy">
+<h3>RAY CHARLES</h3>
+<a href="https://www.mediafire.com/file_premium/oqr0lhhattj0gfg/Ray_Charles_Live_in_Concert_with_Diane_Schuur_1999_Full.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img53.png" width="150" height="220" loading="lazy">
+<h3>JAMES BROWN</h3>
+<a href="https://www.mediafire.com/file_premium/vuw6u71x6rt2k96/James_Brown_Live_-_completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img54.png" width="150" height="220" loading="lazy">
+<h3>ARETHA FRANKLIN</h3>
+<a href="https://www.mediafire.com/file_premium/pccooq9i6yvc0qq/Aretha_Franklin_-_Queen_Of_Soul_%25281986%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img55.png" width="150" height="220" loading="lazy">
+<h3>STEVIE WONDER</h3>
+<a href="https://www.mediafire.com/file_premium/bslq4e6qjvbmldn/Stevie_Wonder_in_Rio_-_2011.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img56.png" width="150" height="220" loading="lazy">
+<h3>MARVIN GAYE</h3>
+<a href="https://www.mediafire.com/file_premium/f72m08utbvrun8f/Marvin_Gaye_-_Live_In__Belgium_1981__%2523MarvinGayeLive_%2523OstendBelgium.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img57.png" width="150" height="220" loading="lazy">
+<h3>MICHAEL JACKSON</h3>
+<a href="https://www.mediafire.com/file_premium/bp3ranpqzm6k8ec/Michael_Jackson_-_Live_In_Bucharest_%2528The_Dangerous_Tour%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img58.png" width="150" height="220" loading="lazy">
+<h3>AMY WINEHOUSE</h3>
+<a href="https://www.mediafire.com/file_premium/m69a3n28rvdeafi/Amy_Winehouse_-_Live_in_London_2007_%2528Full_Concert%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<div class="generoshow">
+<h2>BREGA</h2>
+
+<div class="conteudodiscos">
+<div class="carddiscos">
+<img src="Img-Shows/img185.png" width="150" height="220" loading="lazy">
+<h3>ZEZO POTIGUAR</h3>
+<a href="https://www.mediafire.com/file_premium/vqopzvowhmolokt/BREGA-Zezo_Ao_Vivo_-_Explode_Cora%25C3%25A7%25C3%25A3o-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>  
+
+<div class="carddiscos">
+<img src="Img-Shows/img184.png" width="150" height="220" loading="lazy">
+<h3>JOSÉ AUGUSTO</h3>
+<a href="https://www.mediafire.com/file_premium/uho3x0lzm44ny4a/BREGA-Jos%25C3%25A9_Augusto_-_Aguenta_Cora%25C3%25A7%25C3%25A3o_%2528Ao_Vivo%2529-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img59.png" width="150" height="220" loading="lazy">
+<h3>AMADO BATISTA</h3>
+<a href="https://www.mediafire.com/file_premium/2j11p093hdwgft2/DVD_AMADO_BATISTA_COMPLETO_40_ANOS.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img60.png" width="150" height="220" loading="lazy">
+<h3>REGINADO ROSSI NO CABARET</h3>
+<a href="https://www.mediafire.com/file_premium/des1xd66yx0ikbs/Reginado_Rossi_no_Cabaret_DVD_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img61.png" width="150" height="220" loading="lazy">
+<h3>CRISTIANO NEVES</h3>
+<a href="https://www.mediafire.com/file_premium/a7cuqlr9gsiezbt/Cristiano_Neves_-_Ao_Vivo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img62.png" width="150" height="220" loading="lazy">
+<h3>BARTÔ GALENO</h3>
+<a href="https://www.mediafire.com/file_premium/ejplcii9yg4e3m4/BART%25C3%2594_GALENO_DVD_Completo_Feira_S%25C3%25A3o_Crist%25C3%25B3v%25C3%25A3o_Part._BARTOZINHO_GALENO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img63.png" width="150" height="220" loading="lazy">
+<h3>SIDNEY MAGAL E CONVIDADOS</h3>
+<a href="https://www.mediafire.com/file_premium/vnziyb1qzpc5ack/BAILAMOS_AO_VIVO_SIDNEY_MAGAL_E_CONVIDADOS.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img64.png" width="150" height="220" loading="lazy">
+<h3>WALDICK SORIANO & ORQUESTRA</h3>
+<a href="https://www.mediafire.com/file_premium/ualxyhoky21kmdm/Waldick_Soriano_%2526_Orquestra_Ao_Vivo_2007_-_DVD_Completo%252C_c__sele%25C3%25A7%25C3%25A3o_de_M%25C3%25BAsicas_%2528720p_HD%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img65.png" width="150" height="220" loading="lazy">
+<h3>ROBERTO CARLOS</h3>
+<a href="https://www.mediafire.com/file_premium/yxmkb9bcxi0nu60/2009_-_Roberto_Carlos__-_50_Anos_de_Crreira_%2528HDTV%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="generoshow">
+<h2>Country</h2>
+
+<div class="conteudodiscos">
+<div class="carddiscos">
+<img src="Img-Shows/img186.png" width="150" height="220" loading="lazy">
+<h3>ALAN JACKSON</h3>
+<a href="https://www.mediafire.com/file_premium/lodbwacoypfhqj6/COUNTRY-Alan_Jackson__-_Best_Songs_of_Alan_Jackson_Live_-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img187.png" width="150" height="220" loading="lazy">
+<h3>JOHNNY CASH</h3>
+<a href="https://www.mediafire.com/file_premium/70c9r4ou591b3zs/COUNTRY-Johnny_Cash_Live_at_Manhattan_Center-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img188.png" width="150" height="220" loading="lazy">
+<h3>SHANIA TWAIN</h3>
+<a href="https://www.mediafire.com/file_premium/725jciinu4oeu47/COUNTRY-Shania_Twain_-_Austin_City_Limits_2023-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img66.png" width="150" height="220" loading="lazy">
+<h3>ALAN JACKSON</h3>
+<a href="https://www.mediafire.com/file_premium/18g3hk2k7lvzru7/Alan_Jackson_-_Aquapalooza_2009_FULL_CONCERT.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<div class="generoshow">
+<h2>FUNK</h2>
+
+<div class="conteudodiscos">
+<div class="carddiscos">
+<img src="Img-Shows/img67.png" width="150" height="220" loading="lazy">
+<h3>BONDE DO TIGRÃO</h3>
+<a href="https://www.mediafire.com/file_premium/sw05jn3ntfgld0m/BONDE_DO_TIGR%25C3%2583O_-_DVD_O_BAILE_TODO_%2528COMPLETO%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img68.png" width="150" height="220" loading="lazy">
+<h3>FURACÃO 2000</h3>
+<a href="https://www.mediafire.com/file_premium/20iskelzvb7pu8u/DVD_Furaca%25CC%2583o_2000_-_Funk_de_Verdade_%2528COMPLETO%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img69.png" width="150" height="220" loading="lazy">
+<h3>ANITTA</h3>
+<a href="https://www.mediafire.com/file_premium/0h0qju3i5kbjg8g/Anitta_Rock_In_Rio_2019__ANITTA_AO_VIVO_NO_RIR_19_BRASIL-_Live_Full_Concert_-_FULL_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img70.png" width="150" height="220" loading="lazy">
+<h3>LUDMILLA</h3>
+<a href="https://www.mediafire.com/file_premium/0769i09f226mvts/Ludmilla_-_Garota_Vip_Manaus_Am_2022-_Show_completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>  
+
+<div class="carddiscos">
+<img src="Img-Shows/img199.png" width="150" height="220" loading="lazy">
+<h3>MC NALDINHO</h3>
+<a href="https://www.mediafire.com/file_premium/w4y3dyovcyc9a6s/FUNK-MC_Naldinho_A_hist%25C3%25B3ria_do_funk_ao_vivo_na_Roda_de_Funk-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img200.png" width="150" height="220" loading="lazy">
+<h3>MC SERGINHO</h3>
+<a href="https://www.mediafire.com/file_premium/fh3i77xbroz11k3/FUNK-MC_Serginho_Ao_vivo_e_pela_primeira_vez_na_Roda_de_Funk-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img71.png" width="150" height="220" loading="lazy">
+<h3>MC MARCINHO</h3>
+<a href="https://www.mediafire.com/file_premium/wwkjxfdp0l0x68c/Mc_Marcinho_DVD_Completo_Tudo_%25C3%25A9_Festa.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img72.png" width="150" height="220" loading="lazy">
+<h3>MC LEOZINHO</h3>
+<a href="https://www.mediafire.com/file_premium/dwyx33vstkqb482/DVD_MC_LEOZINHO_AO_VIVO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="generoshow">
+<h2>FORRÓ</h2>
+
+<div class="conteudodiscos">
+<div class="carddiscos">
+<img src="Img-Shows/img45.png" width="150" height="220" loading="lazy">
+<h3>WESLEY SAFADÃO</h3>
+<a href="https://www.mediafire.com/file_premium/8ltlqv1mbme49q3/Wesley_Safad%25C3%25A3o_-_Rio_de_Janeiro_%2528DVD_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img195.png" width="150" height="220" loading="lazy">
+<h3>Barões da Pisadinha</h3>
+<a href="https://www.mediafire.com/file_premium/kq2eorlbcjpjpgf/FORR%25C3%2593-Bar%25C3%25B5es_da_Pisadinha_-_BBQ_MIX_Goi%25C3%25A2nia-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img196.png" width="150" height="220" loading="lazy">
+<h3>Calcinha preta</h3>
+<a href="https://www.mediafire.com/file_premium/8hdys4qogrmi65q/FORR%25C3%2593-Calcinha_Preta_-__%2523CP25anos_%2528Ao_Vivo_em_Aracaju%2529-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img197.png" width="150" height="220" loading="lazy">
+<h3>Falamansa</h3>
+<a href="https://www.mediafire.com/file_premium/xxgkv0j71iq9o8x/FORR%25C3%2593-Falamansa-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img198.png" width="150" height="220" loading="lazy">
+<h3>Luiz Gonzaga</h3>
+<a href="https://www.mediafire.com/file_premium/rk6chmnzao8kvg2/FORR%25C3%2593-Luiz_Gonzaga_no_Guaruj%25C3%25A1_AO_VIVO-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img73.png" width="150" height="220" loading="lazy">
+<h3>OS BARÕES DA PISADINHA</h3>
+<a href="https://www.mediafire.com/file_premium/mdy75nyrp4l401s/Os_Bar%25C3%25B5es_da_Pisadinha_-_Itacoatiara_AM_-_Aniversario_de_148_Anos_-_Abril_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img74.png" width="150" height="220" loading="lazy">
+<h3>JOÃO GOMES</h3>
+<a href="https://www.mediafire.com/file_premium/i2ax9mgqc81sn84/JO%25C3%2583O_GOMES_AO_VIVO_NO_FESTIVAL_EXPOCRATO_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img75.png" width="150" height="220" loading="lazy">
+<h3>ZÉ VAQUEIRO</h3>
+<a href="https://www.mediafire.com/file_premium/23gomc7bo7qp0sj/Z%25C3%25A9_Vaqueiro_-_S%25C3%25ADtio_do_Mato_BA_-_Aniversario_de_33_Anos_-_Janeiro_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img76.png" width="150" height="220" loading="lazy">
+<h3>VITOR FERNANDES</h3>
+<a href="https://www.mediafire.com/file_premium/fgnvpc4gcyxhowz/VITOR_FERNANDES_AO_VIVO_EM_SAP%25C3%2589_-_PB_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img77.png" width="150" height="220" loading="lazy">
+<h3>DORGIVAL DANTAS</h3>
+<a href="https://www.mediafire.com/file_premium/wmro4bvkt3urvr9/Dorgival_Dantas_show_completo_HD_em__panelas_PE_2022.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img78.png" width="150" height="220" loading="lazy">
+<h3>CALCINHA PRETA</h3>
+<a href="https://www.mediafire.com/file_premium/ttqn5v7q4ojhe2i/Calcinha_Preta_-_DVD_Completo_%2523ComoN%25C3%25A3oAmar_%2528Ao_Vivo_em_Bel%25C3%25A9m_do_Par%25C3%25A1%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img79.png" width="150" height="220" loading="lazy">
+<h3>XAND AVIÃO NO AVIÕES FANTASY</h3>
+<a href="https://www.mediafire.com/file_premium/5k86q4fwdbpag1r/XAND_AVI%25C3%2583O_AO_VIVO_NO_AVI%25C3%2595ES_FANTASY_2022.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img80.png" width="150" height="220" loading="lazy">
+<h3>AVIÕES DO FORRÓ</h3>
+<a href="https://www.mediafire.com/file_premium/22watc2jkeai0z7/Avi%25C3%25B5es_Do_Forr%25C3%25B3_Sunset_Dvd_Completo_2015_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img81.png" width="150" height="220" loading="lazy">
+<h3>FALAMANSA</h3>
+<a href="https://www.mediafire.com/file_premium/gxmnb98fnj21wt2/FALAMANSA_%2523CulturaEmCasa_Musical.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img82.png" width="150" height="220" loading="lazy">
+<h3>JONAS ESTICADO</h3>
+<a href="https://www.mediafire.com/file_premium/qkhxjtu40zcxo0m/JONAS_ESTICADO_AO_VIVO_EM_SERRA_TALHADA_-_PE_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img83.png" width="150" height="220" loading="lazy">
+<h3>DESEJO DE MENINA</h3>
+<a href="https://www.mediafire.com/file_premium/ln7vspq4dr1rbyf/DESEJO_DE_MENINA_AO_VIVO_EM_%25C3%2581GUA_BRANCA_-_AL_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img84.png" width="150" height="220" loading="lazy">
+<h3>MASTRUZ COM LEITE</h3>
+<a href="https://www.mediafire.com/file_premium/xk2ryn3f6w1ns4q/MASTRUZ_COM_LEITE_AO_VIVO_EM_GIRAU_DO_PONCIANO_-_AL_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img85.png" width="150" height="220" loading="lazy">
+<h3>DOMINGUINHOS</h3>
+<a href="https://www.mediafire.com/file_premium/0lkcgs1gqdrh0rs/Iluminado_Dominguinhos_-_Show_Completo_-_Digi2_Filmes.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img86.png" width="150" height="220" loading="lazy">
+<h3>CONDE DO FORRÓ</h3>
+<a href="https://www.mediafire.com/file_premium/cgr8nw3it5hk7es/DVD_Conde_do_Forr%25C3%25B3_-_Ao_Vivo_Em_Fortaleza_-_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img87.png" width="150" height="220" loading="lazy">
+<h3>MAGNIFICOS</h3>
+<a href="https://www.mediafire.com/file_premium/5uzv8avjellqusy/Magnificos_%2528Ao_Vivo_no_Classic_Hall%2529_-_DVD_Promocional_2016.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img88.png" width="150" height="220" loading="lazy">
+<h3>MANO WALTER</h3>
+<a href="https://www.mediafire.com/file_premium/vaatww37flb0vux/MANO_WALTER_AO_VIVO_NO_S%25C3%2583O_JO%25C3%2583O_DE_CAMPINA_GRANDE_-_PB_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img89.png" width="150" height="220" loading="lazy">
+<h3>LIMÃO COM MEL</h3>
+<a href="https://www.mediafire.com/file_premium/kwuhteet9xnlzba/DVD_UM_SHOW_DE_EMO%25C3%2587%25C3%2595ES_-_LIM%25C3%2583O_COM_MEL.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img90.png" width="150" height="220" loading="lazy">
+<h3>RAÍ SAIA RODADA</h3>
+<a href="https://www.mediafire.com/file_premium/z1hptbamks0n8e2/RA%25C3%258D_SAIA_RODADA_AO_VIVO_EM_SENADOR_CANEDO_-_GO_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img91.png" width="150" height="220" loading="lazy">
+<h3>BONDE DO FORRÓ</h3>
+<a href="https://www.mediafire.com/file_premium/ao9wr6qtprwdvr0/BONDE_DO_FORR%25C3%2593_-_DVD_AO_VIVO_COMPLETO_%2528VOLUME_3%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img92.png" width="150" height="220" loading="lazy">
+<h3>MOLECA 100 VERGONHA</h3>
+<a href="https://www.mediafire.com/file_premium/zhv6vxr70jfj56r/Moleca_100_Vergonha_-_Campo_Formoso_BA_-_26%25C2%25BA_Arrai%25C3%25A1_da_Freguesia_-_Junho_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img93.png" width="150" height="220" loading="lazy">
+<h3>FRANK AGUIAR</h3>
+<a href="https://www.mediafire.com/file_premium/4vpabufi8cxsnmj/Frank_Aguiar_-_O_C%25C3%25A3ozinho_dos_Teclados_-_DVD_Completo_-_25_Anos.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img94.png" width="150" height="220" loading="lazy">
+<h3>PEPE MORENO</h3>
+<a href="https://www.mediafire.com/file_premium/zeucpr8a2apxq9i/Pepe_Moreno_-_Maca%25C3%25BAbas_BA_-_S%25C3%25A3o_Jo%25C3%25A3o_-_Junho_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img95.png" width="150" height="220" loading="lazy">
+<h3>WESLEY SAFADÃO</h3>
+<a href="https://www.mediafire.com/file_premium/mwq7fi6zuxa9i9r/WESLEY_SAFAD%25C3%2583O_AO_VIVO_NO_GAROTA_VIP_MANAUS_2022_SHOW_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img96.png" width="150" height="220" loading="lazy">
+<h3>BANDA CALYPSO</h3>
+<a href="https://www.mediafire.com/file_premium/yuhsto6cvtqi58z/DVD_Banda_Calypso_Pelo_Brasil_-_Ao_Vivo_2006_%2528Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img97.png" width="150" height="220" loading="lazy">
+<h3>CAVALEIROS DO FORRÓ</h3>
+<a href="https://www.mediafire.com/file_premium/qbsh642mb0cgbga/DVD_Cavaleiros_do_Forr%25C3%25B3_Inesquec%25C3%25ADvel_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img98.png" width="150" height="220" loading="lazy">
+<h3>SOLANGE ALMEIDA</h3>
+<a href="https://www.mediafire.com/file_premium/ssy2z9b1mvaschn/Solange_Almeida_-_Coqueiro_Seco_AL_-_Anivers%25C3%25A1rio_de_60_Anos_-_Novembro_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<div class="generoshow">
+<h2>MPB</h2>
+
+<div class="conteudodiscos">
+<div class="carddiscos">
+<img src="Img-Shows/img201.png" width="150" height="220" loading="lazy">
+<h3>TIM MAIA</h3>
+<a href="https://www.mediafire.com/file_premium/caumnh75mtxm8dz/MPB-Tim_Maia_-_In_Concert_%25281989%2529-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>  
+
+<div class="carddiscos">
+<img src="Img-Shows/img99.png" width="150" height="220" loading="lazy">
+<h3>GILBERTO GIL</h3>
+<a href="https://www.mediafire.com/file_premium/rwp79n5cfzqgc9y/Gilberto_Gil_Concerto_de_Cordas_%2526_M%25C3%25A1quinas_de_Ritmo_%2528Show_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img100.png" width="150" height="220" loading="lazy">
+<h3>CAETANO VELOSO</h3>
+<a href="https://www.mediafire.com/file_premium/j3pbiucnh9cymmw/LIVE_do_Caetano_de_Natal_%2523LivedoCaetanodeNatal.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img100a.png" width="150" height="220" loading="lazy">
+<h3>CHICO BUARQUE</h3>
+<a href="https://www.mediafire.com/file_premium/xcfwcjvowa67mjc/Chico_Buarque_Carioca_%2528Show_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img101.png" width="150" height="220" loading="lazy">
+<h3>JORGE BEN JOR</h3>
+<a href="https://www.mediafire.com/file_premium/ajei8sffq794mr1/JORGE_BEN_JOR_AO_VIVO_1982_DVD_ENERGIA.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img102.png" width="150" height="220" loading="lazy">
+<h3>TOM JOBIM</h3>
+<a href="https://www.mediafire.com/file_premium/owoeh4o6idg06go/Tom_Jobim_Ao_Vivo_Em_Montreal_%2528Show_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img103.png" width="150" height="220" loading="lazy">
+<h3>MILTON NASCIMENTO</h3>
+<a href="https://www.mediafire.com/file_premium/ug0ko1vgn0f14va/Milton_Nascimento_e_Orquestra_Ouro_Preto_-_Clube_da_Esquina.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img104.png" width="150" height="220" loading="lazy">
+<h3>ELIS REGINA</h3>
+<a href="https://www.mediafire.com/file_premium/z6vx0mabj9etydg/ELIS_REGINA_HD_640x360_XVID_Wide_Screen.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img105.png" width="150" height="220" loading="lazy">
+<h3>JOÃO GILBERTO</h3>
+<a href="https://www.mediafire.com/file_premium/pr3bb5ydd8gsjq7/Jo%25C3%25A3o_Gilberto_ao_Vivo_em_S%25C3%25A3o_Paulo_-_2008.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img106.png" width="150" height="220" loading="lazy">
+<h3>TOQUINHO</h3>
+<a href="https://www.mediafire.com/file_premium/ggfkk22g3fu4om0/Toquinho_-_50_Anos_de_Carreira_%2528DVD_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img107.png" width="150" height="220" loading="lazy">
+<h3>VINICIUS DE MORAES</h3>
+<a href="https://www.mediafire.com/file_premium/30yl7du1qw0qwrb/Vinicius_de_Moraes_Ao_Vivo_Parigi_Olympia_1978.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img108.png" width="150" height="220" loading="lazy">
+<h3>DJAVAN</h3>
+<a href="https://www.mediafire.com/file_premium/apmg16yrbpdzyzk/DJavan_Ao_Vivo__Aria.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img109.png" width="150" height="220" loading="lazy">
+<h3>TAIGUARA</h3>
+<a href="https://www.mediafire.com/file_premium/g9njeyxep9o8f39/Taiguara_-_TV_Bandeirantes.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img110.png" width="150" height="220" loading="lazy">
+<h3>ZÉ RAMALHO</h3>
+<a href="https://www.mediafire.com/file_premium/prei55rwxmspak5/Z%25C3%25A9_Ramalho_-_Barueri_SP_-_Aniversario_de_73_Anos_-_Mar%25C3%25A7o_2022_-_Show_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img111.png" width="150" height="220" loading="lazy">
+<h3>JORGE VERCILLO</h3>
+<a href="https://www.mediafire.com/file_premium/kih06n9psoafyw6/Jorge_Vercillo_-_DVD_Luar_de_Sol_Completo_%2528MPB_Ao_Vivo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<div class="generoshow">
+<h2>PAGODE E SAMBA</h2>
+
+<div class="conteudodiscos">
+<div class="carddiscos">
+<img src="Img-Shows/img202.png" width="150" height="220" loading="lazy">
+<h3>Alexandre Pires</h3>
+<a href="https://www.mediafire.com/file_premium/bblih9j2p07bono/PAGODE_E_SAMBA-Alexandre_Pires_Mais_Al%25C3%25A9m_Ao_Vivo-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img205.png" width="150" height="220" loading="lazy">
+<h3>Jorge Aragão</h3>
+<a href="https://www.mediafire.com/file_premium/6k7opr8aty4iy9y/PAGODE_E_SAMBA-Jorge_Arag%25C3%25A3o_FESTIVAL_FAVELA_SOUNDS_2022-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img203.png" width="150" height="220" loading="lazy">
+<h3>Paulinho da Viola</h3>
+<a href="https://www.mediafire.com/file_premium/vma6abfrfssl1ac/PAGODE_E_SAMBA-Paulinho_da_Viola_-_Ac%25C3%25BAstico_MTV-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img204.png" width="150" height="220" loading="lazy">
+<h3>Raça Negra</h3>
+<a href="https://www.mediafire.com/file_premium/bkx7rtdc48lyp0u/PAGODE_E_SAMBA-Ra%25C3%25A7a_negra%252Cen_concierto-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img112.png" width="150" height="220" loading="lazy">
+<h3>ZECA PAGODINHO</h3>
+<a href="https://www.mediafire.com/file_premium/6kezl8hhpflsihm/ACUSTICO_MTV_ZECA_PAGODINHO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img113.png" width="150" height="220" loading="lazy">
+<h3>BELO</h3>
+<a href="https://www.mediafire.com/file_premium/jx0tmvlk4h6qh0l/Belo_in_Concert_-_Gravado_em_S%25C3%25A3o_Paulo_DVD_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img114.png" width="150" height="220" loading="lazy">
+<h3>THIAGUINHO</h3>
+<a href="https://www.mediafire.com/file_premium/2059ju1fp1g3rvi/THIAGUINHO_AO_VIVO_SAMBA_PIAT%25C3%2583_2022.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img115.png" width="150" height="220" loading="lazy">
+<h3>PAGODE DO MENOS É MAIS</h3>
+<a href="https://www.mediafire.com/file_premium/w34n9mfvzin9x48/Pagode_do_MENOS_%25C3%2589_MAIS_no_Braz%25C3%25B3lia_Bar.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img116.png" width="150" height="220" loading="lazy">
+<h3>PÉRICLES</h3>
+<a href="https://www.mediafire.com/file_premium/e30pg512d450wqn/P%25C3%25A9ricles_-_DVD_Sensa%25C3%25A7%25C3%25B5es_%2528DVD_COMPLETO%2529_UHD_4K.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img117.png" width="150" height="220" loading="lazy">
+<h3>BETH CARVALHO</h3>
+<a href="https://www.mediafire.com/file_premium/svnv1t98spv52xq/Beth_Carvalho_-_Ao_Vivo_no_Parque_de_Madureira_%2528DVD_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img118.png" width="150" height="220" loading="lazy">
+<h3>SÓ PRA CONTRARIAR</h3>
+<a href="https://www.mediafire.com/file_premium/9ai3jxm6r1kdlw7/So_Pra_Contrariar_25_anos.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img119.png" width="150" height="220" loading="lazy">
+<h3>RAÇA NEGRA</h3>
+<a href="https://www.mediafire.com/file_premium/oxqsv4mlilijc9g/RA%25C3%2587A_NEGRA_DVD_COMPLETO_TOP_10.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img120.png" width="150" height="220" loading="lazy">
+<h3>GRUPO PIXOTE</h3>
+<a href="https://www.mediafire.com/file_premium/iggl1b4wcg7udb7/PIXOTE_HOUSE_MUSIC_-_DVD_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img121.png" width="150" height="220" loading="lazy">
+<h3>SORRISO MAROTO</h3>
+<a href="https://www.mediafire.com/file_premium/fw6ejjkcrtyxs8q/Sorriso_Maroto_-_DVD_%25C3%2589_Diferente_%2528Show_Completo_%252B_Entrevista_%252B_Subs__PT__ENG__SPA_%252B_Playlist%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img122.png" width="150" height="220" loading="lazy">
+<h3>FERRUGEM</h3>
+<a href="https://www.mediafire.com/file_premium/b2vaci5meczwlpu/Ferrugem_Ao_Vivo_no_Samba_da_Feira_%2528SHOW_COMPLETO%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img123.png" width="150" height="220" loading="lazy">
+<h3>DILSINHO</h3>
+<a href="https://www.mediafire.com/file_premium/y8lvsjy5oklipg9/Dilsinho_aovivo_em__Salvador_ba_show_completo__HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="generoshow">
+<h2>POP</h2>
+
+<div class="conteudodiscos">
+<div class="carddiscos">
+<img src="Img-Shows/img206.png" width="150" height="220" loading="lazy">
+<h3>Elton John</h3>
+<a href="https://www.mediafire.com/file_premium/zyk4hs98zhev19n/POP-Elton_John_LIVE_-_2022-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img207.png" width="150" height="220" loading="lazy">
+<h3>Harry Styles</h3>
+<a href="https://www.mediafire.com/file_premium/g9myb41btdxohqz/POP-Harry_styles_live_in_concert_Los_Angeles-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img208.png" width="150" height="220" loading="lazy">
+<h3>Latino</h3>
+<a href="https://www.mediafire.com/file_premium/ouqvg20thrccpdq/POP-Latino__-_Maiores_Sucessos-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>  
+
+<div class="carddiscos">
+<img src="Img-Shows/img209.png" width="150" height="220" loading="lazy">
+<h3>Sandy & Junior</h3>
+<a href="https://www.mediafire.com/file_premium/7o03zllox5xb3ym/POP-Sandy_e_Junior_-_Ao_Vivo_no_Maracan%25C3%25A3-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img124.png" width="150" height="220" loading="lazy">
+<h3>BEE GEES</h3>
+<a href="https://www.mediafire.com/file_premium/6uz2u3lif5jh5u3/Bee_Gees_-_One_Night_Only_1997_%2528Show_Completo%2529_720p_%2528HD%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img125.png" width="150" height="220" loading="lazy">
+<h3>JUSTIN BIEBER</h3>
+<a href="https://www.mediafire.com/file_premium/v1ujlgb529exkpm/Justin_Bieber_Capital_Jingle_Bell_Ball_UK_%2528Live%2529_2021_-_Full_Concert.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img126.png" width="150" height="220" loading="lazy">
+<h3>DUA LIPA</h3>
+<a href="https://www.mediafire.com/file_premium/mqtc5z9xr8iz23s/Dua_Lipa_-_OnePlus_Music_Festival_2019_%2528Bass_Boosted%2529_%255BFull_Concert%255D.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img127.png" width="150" height="220" loading="lazy">
+<h3>THE WEEKND</h3>
+<a href="https://www.mediafire.com/file_premium/r790w45zm1xjbkx/The_Weeknd_-_Coachella_2022_%2528Full_Set%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img128.png" width="150" height="220" loading="lazy">
+<h3>ADELE</h3>
+<a href="https://www.mediafire.com/file_premium/8z9hzz292ykhs52/ADELE_AO_VIVO_SHOW_COMPLETO_ITUNES_FESTIVAL_LIVE.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img129.png" width="150" height="220" loading="lazy">
+<h3>TAYLOR SWIFT</h3>
+<a href="https://www.mediafire.com/file_premium/lfv9o1rrz5iyfnc/Taylor_Swift_Live_At_Amazon_Prime_Day_2019.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img130.png" width="150" height="220" loading="lazy">
+<h3>LADY GAGA</h3>
+<a href="https://www.mediafire.com/file_premium/27lv5jzyj2t4b5f/Lady_Gaga_Live_Coachella_Full.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img131.png" width="150" height="220" loading="lazy">
+<h3>BRUNO MARS</h3>
+<a href="https://www.mediafire.com/file_premium/jcytyva5trcdwq7/Bruno_Mars_LIVE_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img132.png" width="150" height="220" loading="lazy">
+<h3>ED SHEERAN</h3>
+<a href="https://www.mediafire.com/file_premium/vneq3sdxqua7ve2/Ed_Sheeran_Live_FULL_SHOW_Magic_Radio.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img133.png" width="150" height="220" loading="lazy">
+<h3>MAROON 05</h3>
+<a href="https://www.mediafire.com/file_premium/ed491ikx7vh42zg/MAROON_5_ROCK_IN_RIO_2017_COMPLETO_FULL_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img134.png" width="150" height="220" loading="lazy">
+<h3>BEYONCÉ</h3>
+<a href="https://www.mediafire.com/file_premium/209ef1kzfsxgswl/Beyonc%25C3%25A9_-_Beyonc%25C3%25A9_Experience_Live_%25284K_Blu-Ray_Upscale%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img135.png" width="150" height="220" loading="lazy">
+<h3>ONE DIRECTION</h3>
+<a href="https://www.mediafire.com/file_premium/rfeve1fdk54n0jc/One_Direction-_Where_we_are_live_from_San_Siro_stadium_And_The_Road_To.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img136.png" width="150" height="220" loading="lazy">
+<h3>KATY PERRY</h3>
+<a href="https://www.mediafire.com/file_premium/srbuzlzzphn1put/Katy_Perry_-_OnePlus_Music_Festival_2019_Full_Concert_%2528Full_HD%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img137.png" width="150" height="220" loading="lazy">
+<h3>DEMI LOVATO</h3>
+<a href="https://www.mediafire.com/file_premium/0sizdtsc21qjx5s/Demi_Lovato_-__Full_Concert_Show_Completo_%2528Live_from_Rock_in_Rio_Lisboa_2018%2529_1080p_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img138.png" width="150" height="220" loading="lazy">
+<h3>SHAKIRA</h3>
+<a href="https://www.mediafire.com/file_premium/merjty1mlpyqgib/Shakira_Live_From_Paris.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img139.png" width="150" height="220" loading="lazy">
+<h3>BACKSTREET BOYS</h3>
+<a href="https://www.mediafire.com/file_premium/x6llah3nv4azal6/BACKSTREET_BOYS_-_FULL_CONCERT_-_VI%25C3%2591A_DEL_MAR%252C_CHILE_2019_%2528OFFICIAL_VIDEO%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img140.png" width="150" height="220" loading="lazy">
+<h3>MADONNA</h3>
+<a href="https://www.mediafire.com/file_premium/izq4oq24fe1ac1q/Madonna_-_The_Confessions_Tour_%2528Live_from_London%252C_England_2006%2529_DVD_Full_Show_%255BRemastered_HD%255D.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img141.png" width="150" height="220" loading="lazy">
+<h3>BRITNEY SPEARS</h3>
+<a href="https://www.mediafire.com/file_premium/toqdfg6r50q1r6q/Britney_Spears_-_Oops%2521..._I_Did_It_Again_Tour_%2540_New_Orleans_%255BE4_Digital_AI%255D.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img142.png" width="150" height="220" loading="lazy">
+<h3>CELINE DION</h3>
+<a href="https://www.mediafire.com/file_premium/r0n3qzaevdrxx5m/Celine_Dion_-_A_New_Day_%25282007%2529_DVD__Live_In_Las_Vegas_Full_Concert_CDST_L.U.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img143.png" width="150" height="220" loading="lazy">
+<h3>JUSTIN TIMBERLAKE</h3>
+<a href="https://www.mediafire.com/file_premium/5dkghgy6nk03zyh/Justin_Timberlake_-_Rock_in_Rio_2013_%2528HD%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img144.png" width="150" height="220" loading="lazy">
+<h3>KLB</h3>
+<a href="https://www.mediafire.com/file_premium/oze82i4rz2sfvtm/DVD_KLB_Completo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img145.png" width="150" height="220" loading="lazy">
+<h3>LAURA PAUSINI</h3>
+<a href="https://www.mediafire.com/file_premium/uzg8g0rwvxzp94y/Laura_Pausini_-_Circo_Massimo.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img146.png" width="150" height="220" loading="lazy">
+<h3>ROUPA NOVA</h3>
+<a href="https://www.mediafire.com/file_premium/j9fb0g05jfwd1yj/Roupa_Nova_30_Anos_Ao_Vivo_I_DVD_%2523roupanova_%2523aovivo_%2523brasil_%2523multishow.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="generoshow">
+<h2>ROCK</h2>
+
+<div class="conteudodiscos">
+<div class="carddiscos">
+<img src="Img-Shows/img210.png" width="150" height="220" loading="lazy">
+<h3>CPM22</h3>
+<a href="https://www.mediafire.com/file_premium/7io6olkrs078dl6/ROCK-CPM_22_no_Rock_in_Rio-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img211.png" width="150" height="220" loading="lazy">
+<h3>ELVIS PRESLEY</h3>
+<a href="https://www.mediafire.com/file_premium/9jr2ng0bt67e268/ROCK-Elvis_Presley_-_%25281968%2529-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img212.png" width="150" height="220" loading="lazy">
+<h3>SKANK</h3>
+<a href="https://www.mediafire.com/file_premium/24f0qkw5re2w6nc/ROCK-Skank-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img147.png" width="150" height="220" loading="lazy">
+<h3>QUEEN</h3>
+<a href="https://www.mediafire.com/file_premium/erm1b6447p7gvh5/Queen_-_Hungarian_Rhapsody_Live_In_Budapest_1986_%255BFull_Concert_1080p48%255D.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img148.png" width="150" height="220" loading="lazy">
+<h3>PEARL JAM</h3>
+<a href="https://www.mediafire.com/file_premium/yn9wn1frnxftnuf/Pearl_Jam_05-02-2016_New_York_City%252C_Madison_Square_Garden_Full_Show_Multicam_SBD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img149.png" width="150" height="220" loading="lazy">
+<h3>THE BEATLES</h3>
+<a href="https://www.mediafire.com/file_premium/13v4k3vgfhro021/The_Beatles_-_Live_At_Nippon_Budokan_Hall%252C_Japan_%25281966%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img150.png" width="150" height="220" loading="lazy">
+<h3>GUNS N' ROSES</h3>
+<a href="https://www.mediafire.com/file_premium/km4csuuf43318if/Guns_N%2527_Roses_-_Use_Your_Illusion_-_Live_In_Tokyo_full_concert_%2528HD_Remastered%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img151.png" width="150" height="220" loading="lazy">
+<h3>PINK FLOYD</h3>
+<a href="https://www.mediafire.com/file_premium/8fslmp2ih9kuroe/Pink_Floyd_-_PULSE_%2528Restored_Re-Edited_90_Minute_Version%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img152.png" width="150" height="220" loading="lazy">
+<h3>NIRVANA</h3>
+<a href="https://www.mediafire.com/file_premium/9hiz0t4w8u7pd21/Nirvana_-_MTV_Live_And_Loud_1993_%2528Full_Concert%2529_%255B60_fps%255D_%255BHD%255D.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img153.png" width="150" height="220" loading="lazy">
+<h3>LED ZEPPELIN</h3>
+<a href="https://www.mediafire.com/file_premium/8w7iub5ejtxb621/Led_Zeppelin_DVD_II.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img154.png" width="150" height="220" loading="lazy">
+<h3>AC/DC</h3>
+<a href="https://www.mediafire.com/file_premium/a23zudamm33pp4s/AC_DC_-_FULL_CONCERT_%2528_Rock_Or_Bust_-Worldtour%2529_-_Berlin_2015_-_Multicam-Mix.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img155.png" width="150" height="220" loading="lazy">
+<h3>METALLICA</h3>
+<a href="https://www.mediafire.com/file_premium/fs3bsdi5mcyf0hi/Metallica__Full_Concert_-__Live_from_Nimes%252C_France_2009_HD%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img156.png" width="150" height="220" loading="lazy">
+<h3>RED HOT CHILI PEPPERS</h3>
+<a href="https://www.mediafire.com/file_premium/4xzyxhfr1m4bppu/Red_Hot_Chili_Peppers_-_Live_at_Slane_Castle_2003_Full_Concert_%2528High_Quality%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img157.png" width="150" height="220" loading="lazy">
+<h3>IRON MAIDEN</h3>
+<a href="https://www.mediafire.com/file_premium/m38t4fk0o0qujkg/Iron_Maiden_-_Live_%2540_Rock_am_Ring_2014_%2528Full_Show%252C_Pro_Shot%2529_%255BHD%255D.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img158.png" width="150" height="220" loading="lazy">
+<h3>BON JOVI</h3>
+<a href="https://www.mediafire.com/file_premium/illr87ixdrm25s0/Bon_Jovi_The_Crush_Tour_Full_Concert.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img159.png" width="150" height="220" loading="lazy">
+<h3>THE ROLLING STONES</h3>
+<a href="https://www.mediafire.com/file_premium/bsq5ooim8n52d8c/The_Rolling_Stones_-_Austin%252C_TX_-_10-22-2006_COMPLETO.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img160.png" width="150" height="220" loading="lazy">
+<h3>BLACK SABBATH</h3>
+<a href="https://www.mediafire.com/file_premium/7wbvqw33z2g7omk/BLACK_SABBATH_-_Live_in_Paris_%25281970%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img161.png" width="150" height="220" loading="lazy">
+<h3>KISS</h3>
+<a href="https://www.mediafire.com/file_premium/7go7ohbmznw0tww/Kiss_Live_In_Zurich_Full_Concert_2013.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img162.png" width="150" height="220" loading="lazy">
+<h3>SCORPIONS</h3>
+<a href="https://www.mediafire.com/file_premium/w2aniazwodwc66d/Scorpions_Acoustica_Live_in_Lisboa_2001.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img164.png" width="150" height="220" loading="lazy">
+<h3>U2</h3>
+<a href="https://www.mediafire.com/file_premium/mpt9o455o2zdhgi/U2_-_Vertigo_world_tour_-_Live_from_Chicago_2005_full.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img165.png" width="150" height="220" loading="lazy">
+<h3>RAMONES</h3>
+<a href="https://www.mediafire.com/file_premium/cq9krqp5yakogh9/Ramones_-_Buenos_Aires%252C_Argentina_16_03_1996_%2528FULL_SHOW_COMPLETO%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img166.png" width="150" height="220" loading="lazy">
+<h3>THE DOORS</h3>
+<a href="https://www.mediafire.com/file_premium/pd08sfcew08mxs2/The_Doors_Live_At_The_Hollywood_Bowl%252C_July_5%252C_1968_Full_Concert.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img167.png" width="150" height="220" loading="lazy">
+<h3>VAN HALEN</h3>
+<a href="https://www.mediafire.com/file_premium/5sfn4prpegyorgn/Van_Halen_-_Right_Here_Right_Now_Concert_%2528HD%2529_-_The_%2528remastered%2529_audio_file_link_is_in_description.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img168.png" width="150" height="220" loading="lazy">
+<h3>GREEN DAY</h3>
+<a href="https://www.mediafire.com/file_premium/xo9lgr7yqurx3d7/Green_Day_-_Lollapalooza_2022_-_Full_Show_HD.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img169.png" width="150" height="220" loading="lazy">
+<h3>SEPULTURA</h3>
+<a href="https://www.mediafire.com/file_premium/7xrpee4d5yzsja3/EXIT_2022_Sepultura_Live_%2540_Main_Stage_FULL_SHOW_%2528HQ_version%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img170.png" width="150" height="220" loading="lazy">
+<h3>EAGLES</h3>
+<a href="https://www.mediafire.com/file_premium/0ew1kkyi1wy4g42/Eagles_-_Hell_Freezes_Over_%25281994%2529_%2528DVD%2529_%2528HQ%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img171.png" width="150" height="220" loading="lazy">
+<h3>ANGRA</h3>
+<a href="https://www.mediafire.com/file_premium/flqtkwuil19vb4t/Angra_-_DVD__%25C3%2598mni__com_Sandy_e_Fam%25C3%25ADlia_Lima__Full_Concert.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img172.png" width="150" height="220" loading="lazy">
+<h3>THE CRANBERRIES</h3>
+<a href="https://www.mediafire.com/file_premium/ufewu89sfbo18mn/The_Cranberries_-_Beneath_the_Skin_%2528_Live_in_Paris_1999_%2529_Full_Concert_169_HQ.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img173.png" width="150" height="220" loading="lazy">
+<h3>LEGIÃO URBANA</h3>
+<a href="https://www.mediafire.com/file_premium/q3kid2k50llsa81/ROCK-Legia%25CC%2583o_Urbana_-_Acu%25CC%2581stico_MTV-%2528www.packdemusicas.com.br%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img174.png" width="150" height="220" loading="lazy">
+<h3>RAIMUNDOS</h3>
+<a href="https://www.mediafire.com/file_premium/gnldjl2zcwn66z7/Raimundos_-_Jo%25C3%25A3o_Rock_2019_%2528Show_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img175.png" width="150" height="220" loading="lazy">
+<h3>RPM</h3>
+<a href="https://www.mediafire.com/file_premium/40y038lrwzw8vqu/RPM_-_Ao_Vivo_MTV_2002_%2528DVD_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img176.png" width="150" height="220" loading="lazy">
+<h3>CAPITAL INICIAL</h3>
+<a href="https://www.mediafire.com/file_premium/0ny2dp2e5plv09q/Capital_Inicial_-_Jo%25C3%25A3o_Rock_2019_%2528Show_Completo%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+<div class="carddiscos">
+<img src="Img-Shows/img177.png" width="150" height="220" loading="lazy">
+<h3>CHARLIE BROWN JR</h3>
+<a href="https://www.mediafire.com/file_premium/ln9qul6w5avljh5/Charlie_Brown_Jr_-_M%25C3%25BAsica_Popular_Cai%25C3%25A7ara_%2528DVD_Oficial%2529.mp4/file" target="_blank"><button>Baixar agora</button></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+
+<script src="spamblock/reset/banimento/script05/script.js"></script> 
+
+
+
+</body>
+
+<!-- Mirrored from www.packdemusicas.com.br/paineldosartistas.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Jun 2024 01:30:42 GMT -->
+</html>
